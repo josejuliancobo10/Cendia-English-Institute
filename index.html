@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Cendia English Institute - Aprende Inglés en Quito</title>
+    <meta name="description" content="Aprende inglés con Cendia English Institute en Quito. Método 100% inmersivo, profesores certificados y centro preparador Cambridge.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN with Plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00346f",
+                        "primary-container": "#004a99",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#9bbdff",
+                        "secondary": "#1f6771",
+                        "secondary-container": "#a8ebf5",
+                        "on-secondary-container": "#246c75",
+                        "whatsapp-green": "#25D366",
+                        "whatsapp-green-hover": "#20ba59",
+                        "surface": "#fcf9f8",
+                        "surface-gray": "#F8F9FA",
+                        "surface-dim": "#dcd9d9",
+                        "surface-container": "#f0eded",
+                        "surface-container-high": "#eae7e7",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#1b1c1c",
+                        "on-surface-variant": "#424751",
+                        "border-subtle": "#E5E7EB",
+                        "outline-variant": "#c2c6d3",
+                        "primary-fixed": "#d7e2ff",
+                        "primary-fixed-dim": "#abc7ff"
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        display: ["Montserrat", "sans-serif"]
+                    },
+                    maxWidth: {
+                        "container-max": "1280px"
+                    },
+                    spacing: {
+                        "margin-mobile": "16px",
+                        "margin-desktop": "48px",
+                        "stack-lg": "48px",
+                        "stack-md": "24px"
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#fcf9f8] text-[#1b1c1c] font-sans antialiased selection:bg-primary-container selection:text-on-primary-container pb-20 md:pb-0">
+
+    <!-- Sticky Header (TopNavBar) -->
+    <header class="bg-white/95 backdrop-blur-md fixed top-0 w-full z-40 border-b border-border-subtle shadow-sm transition-all duration-300" id="main-header">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-3.5">
+            <!-- Brand Logo -->
+            <a class="flex items-center gap-3 font-display text-2xl font-bold text-primary hover:opacity-90 transition-opacity" href="#">
+                <div class="flex items-center gap-2.5">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white shadow-md">
+                        <span class="material-symbols-outlined text-2xl">school</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-display font-extrabold text-xl tracking-tight text-primary leading-none">CENDIA</span>
+                        <span class="text-[10px] font-semibold tracking-wider text-secondary uppercase leading-tight">Language Institute</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-7">
+                <a class="font-medium text-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors py-2" href="#cursos">Cursos</a>
+                <a class="font-medium text-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors py-2" href="#metodo">Método</a>
+                <a class="font-medium text-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors py-2" href="#resultados">Resultados</a>
+                <a class="font-medium text-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors py-2" href="#precios">Precios</a>
+                <a class="font-medium text-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors py-2" href="#preguntas">Preguntas</a>
+                <a class="font-medium text-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors py-2" href="#contacto">Contacto</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="flex items-center gap-3">
+                <a class="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-whatsapp-green hover:bg-emerald-50 px-4 py-2 rounded-full transition-colors border border-whatsapp-green" href="https://wa.me/593998720970" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">chat</span>
+                    WhatsApp
+                </a>
+                <a class="text-sm font-semibold bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-primary-container transition-all shadow-sm active:scale-95 text-center" href="#contacto">
+                    Prueba de nivel gratis
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-28 md:pt-36 pb-16 md:pb-24 bg-surface-gray relative overflow-hidden">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Left Content -->
+            <div class="lg:col-span-6 z-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-secondary-container/60 text-on-secondary-container rounded-full text-xs font-semibold mb-6 border border-secondary-container shadow-sm">
+                    <span class="material-symbols-outlined text-[16px] text-secondary">school</span>
+                    <span>Academic Excellence in Quito</span>
+                </div>
+                <h1 class="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary mb-6 leading-tight text-balance">
+                    Habla inglés con confianza. Método 100% inmersivo desde el día uno.
+                </h1>
+                <p class="text-base sm:text-lg text-on-surface-variant mb-8 max-w-xl leading-relaxed">
+                    Clases 100% en inglés, profesores certificados, preparación para exámenes internacionales y resultados comprobados.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a class="inline-flex justify-center items-center gap-2.5 font-semibold text-sm bg-primary text-white px-6 py-4 rounded-xl hover:bg-primary-container transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:scale-95" href="#contacto">
+                        <span class="material-symbols-outlined text-xl">edit_note</span>
+                        <span>Reserva tu prueba de nivel gratis</span>
+                    </a>
+                    <a class="inline-flex justify-center items-center gap-2.5 font-semibold text-sm bg-whatsapp-green text-white px-6 py-4 rounded-xl hover:bg-whatsapp-green-hover transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:scale-95" href="https://wa.me/593998720970" target="_blank" rel="noopener noreferrer">
+                        <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+                        <span>Escríbenos por WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Trust indicators -->
+                <div class="mt-10 pt-8 border-t border-border-subtle grid grid-cols-3 gap-4 text-center sm:text-left">
+                    <div>
+                        <p class="font-display font-bold text-2xl text-primary">+15 Años</p>
+                        <p class="text-xs text-on-surface-variant font-medium">De experiencia</p>
+                    </div>
+                    <div>
+                        <p class="font-display font-bold text-2xl text-primary">100%</p>
+                        <p class="text-xs text-on-surface-variant font-medium">Inmersión total</p>
+                    </div>
+                    <div>
+                        <p class="font-display font-bold text-2xl text-primary">Cambridge</p>
+                        <p class="text-xs text-on-surface-variant font-medium">Centro Oficial</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Right Image -->
+            <div class="lg:col-span-6 relative z-10">
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white group">
+                    <img 
+                        alt="Instalaciones Cendia English Institute" 
+                        class="w-full h-[380px] sm:h-[480px] lg:h-[540px] object-cover transition-transform duration-700 group-hover:scale-105" 
+                        src="https://lh3.googleusercontent.com/aida/AEtjO1UuNJi43lhINbZf7pnUnWDHPnomoacmlBWF2fKpINbOf5mwdI1XXkRQKUJ3_zmOTKDVMXPhD5H9SZo5d_HmKZN_oPw9yCrUVSHsTk2GlPD_3NXzB46aLqP4T2PFVnJp8x9uxpzQ-Hoc-lwihXcKKu3F528Aiyl8TKIHHQO70p-sLpqF3bCvOnaf7aZJcuCzp4qDEErV8UcRQi4lHXVhh5VnNIZiidqMoR3axkqfSMEE7IaeuWNeF_MZ9Q"
+                        onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop';"
+                    >
+                    
+                    <!-- Floating Cambridge Badge -->
+                    <div class="absolute bottom-6 left-6 right-6 sm:right-auto bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-border-subtle flex items-center gap-3.5 animate-bounce-slow">
+                        <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                            <span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        </div>
+                        <div>
+                            <p class="font-display font-bold text-sm text-primary leading-tight">Certificado Cambridge</p>
+                            <p class="text-xs text-on-surface-variant font-medium">Centro Preparador Oficial</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorative subtle background shape -->
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary-fixed-dim/20 to-transparent -skew-x-12 translate-x-1/4 rounded-3xl -z-0 pointer-events-none"></div>
+    </section>
+
+    <!-- Urgency Bar -->
+    <div class="bg-primary text-white py-3.5 px-4 text-center border-b border-primary-container shadow-inner sticky top-[65px] md:top-[69px] z-30">
+        <div class="max-w-container-max mx-auto flex items-center justify-center gap-2 flex-wrap text-xs sm:text-sm font-semibold tracking-wide">
+            <span class="material-symbols-outlined text-amber-300 text-lg animate-pulse">rocket_launch</span>
+            <span>Inicio de clases: Lunes a Viernes – 4 de junio 2026; Sábados – 6 de junio 2026.</span>
+            <span class="bg-amber-400 text-primary px-2.5 py-0.5 rounded-full text-[11px] font-extrabold uppercase">¡Cupos limitados!</span>
+        </div>
+    </div>
+
+    <!-- Courses Section -->
+    <section class="py-16 md:py-24 bg-white" id="cursos">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold text-secondary uppercase tracking-widest bg-secondary-container/50 px-3 py-1 rounded-full">Programas Académicos</span>
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mt-3 mb-4">Cursos diseñados para tus metas</h2>
+                <p class="text-on-surface-variant text-base">Aprende con metodologías interactivas y certificaciones con reconocimiento global.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Course 1 -->
+                <div class="bg-surface-gray rounded-2xl p-6 border border-border-subtle hover:border-primary/40 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-2xl">record_voice_over</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-primary mb-2">Inglés General</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed mb-4">Aprende a comunicarte con fluidez desde el nivel inicial hasta avanzado con inmersión total.</p>
+                        <ul class="space-y-2 text-xs text-on-surface font-medium mb-6">
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Niveles A1 hasta C1</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Grupos reducidos</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Club de conversación</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" class="w-full text-center py-2.5 px-4 rounded-lg bg-primary/10 text-primary font-semibold text-xs hover:bg-primary hover:text-white transition-colors">Más Información</a>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="bg-surface-gray rounded-2xl p-6 border-2 border-primary shadow-md relative flex flex-col justify-between group">
+                    <div class="absolute -top-3 right-4 bg-primary text-white text-[10px] font-extrabold uppercase px-3 py-0.5 rounded-full tracking-wider">Popular</div>
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-2xl">workspace_premium</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-primary mb-2">Examen Aptis & Cambridge</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed mb-4">Preparación intensiva y simulacros reales para aprobar certificaciones internacionales.</p>
+                        <ul class="space-y-2 text-xs text-on-surface font-medium mb-6">
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Simulacros oficiales</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Técnicas de examen</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Alto porcentaje de aprobación</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" class="w-full text-center py-2.5 px-4 rounded-lg bg-primary text-white font-semibold text-xs hover:bg-primary-container transition-colors shadow-sm">Reservar Cupo</a>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="bg-surface-gray rounded-2xl p-6 border border-border-subtle hover:border-primary/40 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-secondary text-white flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-2xl">person</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-primary mb-2">Clases 1 a 1</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed mb-4">Tutoría personalizada a tu propio ritmo, enfocada en tus objetivos profesionales o académicos.</p>
+                        <ul class="space-y-2 text-xs text-on-surface font-medium mb-6">
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Horarios flexibles</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Plan a la medida</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Presencial u Online</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" class="w-full text-center py-2.5 px-4 rounded-lg bg-primary/10 text-primary font-semibold text-xs hover:bg-primary hover:text-white transition-colors">Más Información</a>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="bg-surface-gray rounded-2xl p-6 border border-border-subtle hover:border-primary/40 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-slate-800 text-white flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-2xl">apartment</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-primary mb-2">Inglés Corporativo</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed mb-4">Capacitación corporativa para equipos y empresas que buscan expandirse globalmente.</p>
+                        <ul class="space-y-2 text-xs text-on-surface font-medium mb-6">
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Reportes de progreso</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Facturación empresarial</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> In-company o virtual</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" class="w-full text-center py-2.5 px-4 rounded-lg bg-primary/10 text-primary font-semibold text-xs hover:bg-primary hover:text-white transition-colors">Cotizar Empresa</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology & Results Section -->
+    <section class="py-16 md:py-24 bg-surface-gray border-y border-border-subtle" id="metodo">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-xs font-bold text-secondary uppercase tracking-widest bg-secondary-container/50 px-3 py-1 rounded-full">Nuestro Método</span>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mt-3 mb-6">¿Por qué estudiar en Cendia?</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 rounded-xl bg-primary text-white flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="material-symbols-outlined">forum</span>
+                            </div>
+                            <div>
+                                <h4 class="font-display font-bold text-lg text-primary">Inmersión 100% Práctica</h4>
+                                <p class="text-sm text-on-surface-variant">Desde el primer día practicas comunicación real. Olvídate de traducir mentalmente: aprende a pensar y expresarte naturalmente en inglés.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 rounded-xl bg-secondary text-white flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="material-symbols-outlined">badge</span>
+                            </div>
+                            <div>
+                                <h4 class="font-display font-bold text-lg text-primary">Docentes Internacionales Certificados</h4>
+                                <p class="text-sm text-on-surface-variant">Profesores titulados con certificaciones CELTA, TKT y amplia trayectoria pedagógica en la enseñanza del idioma inglés.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="material-symbols-outlined">timer</span>
+                            </div>
+                            <div>
+                                <h4 class="font-display font-bold text-lg text-primary">Flexibilidad Presencial y Online</h4>
+                                <p class="text-sm text-on-surface-variant">Elige estudiar en nuestras cómodas instalaciones en La Mariscal / Calderón o conéctate en vivo desde tu casa u oficina.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonials / Results in Quito -->
+                <div class="bg-white rounded-3xl p-8 border border-border-subtle shadow-xl space-y-6" id="resultados">
+                    <div class="flex items-center justify-between border-b border-border-subtle pb-4">
+                        <h3 class="font-display font-bold text-xl text-primary">Testimonios Reales</h3>
+                        <div class="flex text-amber-400">
+                            <span class="material-symbols-outlined text-sm">star</span>
+                            <span class="material-symbols-outlined text-sm">star</span>
+                            <span class="material-symbols-outlined text-sm">star</span>
+                            <span class="material-symbols-outlined text-sm">star</span>
+                            <span class="material-symbols-outlined text-sm">star</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 1 -->
+                    <div class="p-4 rounded-xl bg-surface-gray border border-border-subtle">
+                        <p class="text-sm text-on-surface italic mb-3">"Cendia me preparó para el examen Aptis y obtuve mi nivel C1 requerido para mi maestría en menos de 4 meses. Las clases conversacionales marcan la diferencia."</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-full bg-primary/20 text-primary font-bold flex items-center justify-center text-xs">MA</div>
+                            <div>
+                                <p class="font-bold text-xs text-primary">Mateo Andrade</p>
+                                <p class="text-[11px] text-on-surface-variant">Ingeniero de Software - Quito</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="p-4 rounded-xl bg-surface-gray border border-border-subtle">
+                        <p class="text-sm text-on-surface italic mb-3">"El ambiente de aprendizaje es excelente y los profesores tienen muchísima paciencia. Perdí el miedo a hablar en público en inglés."</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center text-xs">SV</div>
+                            <div>
+                                <p class="font-bold text-xs text-primary">Sofia Villacís</p>
+                                <p class="text-[11px] text-on-surface-variant">Estudiante de Medicina</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Plans Section -->
+    <section class="py-16 md:py-24 bg-white" id="precios">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold text-secondary uppercase tracking-widest bg-secondary-container/50 px-3 py-1 rounded-full">Planes y Horarios</span>
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mt-3 mb-4">Invierte en tu futuro</h2>
+                <p class="text-on-surface-variant text-base">Opciones convenientes con facilidades de pago y horarios adaptables.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Plan 1 -->
+                <div class="bg-surface-gray rounded-3xl p-8 border border-border-subtle flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-display font-bold text-xl text-primary mb-2">Lunes a Viernes</h3>
+                        <p class="text-xs text-on-surface-variant mb-4">Intensivo diario para un progreso acelerado</p>
+                        <div class="my-6">
+                            <span class="text-3xl font-display font-extrabold text-primary">2 hrs</span>
+                            <span class="text-xs text-on-surface-variant"> / día (10 hrs/semana)</span>
+                        </div>
+                        <ul class="space-y-3 text-xs text-on-surface mb-8">
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">schedule</span> Horarios mañana, tarde y noche</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">menu_book</span> Material digital incluido</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">quiz</span> Prueba diagnóstica sin costo</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" class="block w-full text-center py-3 rounded-xl bg-primary/10 text-primary font-semibold text-sm hover:bg-primary hover:text-white transition-colors">Consultar Tarifa</a>
+                </div>
+
+                <!-- Plan 2 (Destacado) -->
+                <div class="bg-surface-gray rounded-3xl p-8 border-2 border-primary shadow-xl relative flex flex-col justify-between">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold uppercase px-4 py-1 rounded-full tracking-wider">
+                        Más Elegido
+                    </div>
+                    <div>
+                        <h3 class="font-display font-bold text-xl text-primary mb-2">Sábados Intensivos</h3>
+                        <p class="text-xs text-on-surface-variant mb-4">Ideal para profesionales y universitarios</p>
+                        <div class="my-6">
+                            <span class="text-3xl font-display font-extrabold text-primary">5 hrs</span>
+                            <span class="text-xs text-on-surface-variant"> / sábado (8:00 a 13:00)</span>
+                        </div>
+                        <ul class="space-y-3 text-xs text-on-surface mb-8">
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">schedule</span> Un solo día a la semana</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">forum</span> Práctica intensiva de speaking</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">workspace_premium</span> Certificado por módulo</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" class="block w-full text-center py-3 rounded-xl bg-primary text-white font-semibold text-sm hover:bg-primary-container transition-colors shadow-md">Inscribirme Ahora</a>
+                </div>
+
+                <!-- Plan 3 -->
+                <div class="bg-surface-gray rounded-3xl p-8 border border-border-subtle flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-display font-bold text-xl text-primary mb-2">Online en Vivo</h3>
+                        <p class="text-xs text-on-surface-variant mb-4">Aprende desde cualquier lugar con docente en tiempo real</p>
+                        <div class="my-6">
+                            <span class="text-3xl font-display font-extrabold text-primary">100%</span>
+                            <span class="text-xs text-on-surface-variant"> Interactivo en Zoom HD</span>
+                        </div>
+                        <ul class="space-y-3 text-xs text-on-surface mb-8">
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">devices</span> Plataforma 24/7 de ejercicios</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">video_call</span> Clases grabadas de respaldo</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">support_agent</span> Asesoría académica continua</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" class="block w-full text-center py-3 rounded-xl bg-primary/10 text-primary font-semibold text-sm hover:bg-primary hover:text-white transition-colors">Consultar Tarifa</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 md:py-24 bg-surface-gray border-t border-border-subtle" id="preguntas">
+        <div class="max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold text-secondary uppercase tracking-widest bg-secondary-container/50 px-3 py-1 rounded-full">Dudas Frecuentes</span>
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mt-3 mb-4">Preguntas Frecuentes</h2>
+            </div>
+
+            <div class="space-y-4" id="faq-accordion">
+                <!-- FAQ 1 -->
+                <details class="bg-white rounded-xl border border-border-subtle p-5 group transition-all" open>
+                    <summary class="font-display font-semibold text-primary cursor-pointer flex justify-between items-center list-none select-none">
+                        <span>¿Cómo funciona la prueba de nivel gratis?</span>
+                        <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+                    </summary>
+                    <p class="mt-3 text-sm text-on-surface-variant leading-relaxed">
+                        Es una evaluación diagnóstica de 20 a 30 minutos (escrita y oral) guiada por un asesor académico. Te permite conocer tu nivel exacto en el Marco Común Europeo (A1, A2, B1, B2, C1) y recomendarte el curso idóneo sin costo ni compromiso.
+                    </p>
+                </details>
+
+                <!-- FAQ 2 -->
+                <details class="bg-white rounded-xl border border-border-subtle p-5 group transition-all">
+                    <summary class="font-display font-semibold text-primary cursor-pointer flex justify-between items-center list-none select-none">
+                        <span>¿Tienen facilidades de pago o descuentos?</span>
+                        <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+                    </summary>
+                    <p class="mt-3 text-sm text-on-surface-variant leading-relaxed">
+                        Sí, contamos con pago en cuotas mensuales, descuentos por pronto pago o inscripción grupal/familiar, y aceptamos tarjetas de crédito con meses sin intereses.
+                    </p>
+                </details>
+
+                <!-- FAQ 3 -->
+                <details class="bg-white rounded-xl border border-border-subtle p-5 group transition-all">
+                    <summary class="font-display font-semibold text-primary cursor-pointer flex justify-between items-center list-none select-none">
+                        <span>¿Dónde están ubicadas las sedes en Quito?</span>
+                        <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+                    </summary>
+                    <p class="mt-3 text-sm text-on-surface-variant leading-relaxed">
+                        Nuestra sede principal está en La Mariscal (Baquerizo Moreno E8-26 y Almagro, Quito Norte) y disponemos también de sede en Calderón, además de nuestros cursos 100% online en vivo.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16 md:py-24 bg-white relative overflow-hidden" id="contacto">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Contact Left Info -->
+            <div class="lg:col-span-5">
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-primary mb-4 leading-tight">
+                    ¿Listo para hablar inglés? ✨
+                </h2>
+                <p class="text-base text-on-surface-variant mb-8 leading-relaxed">
+                    Déjanos tus datos y nos pondremos en contacto contigo para programar tu prueba de nivel sin costo.
+                </p>
+
+                <div class="bg-surface-gray p-6 rounded-2xl border border-border-subtle space-y-5 shadow-sm">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                            <span class="material-symbols-outlined text-xl">location_on</span>
+                        </div>
+                        <div>
+                            <h4 class="font-display font-bold text-sm text-primary">La Mariscal – Quito Norte</h4>
+                            <p class="text-xs sm:text-sm text-on-surface-variant">Baquerizo Moreno E8-26 y Almagro</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                            <span class="material-symbols-outlined text-xl">call</span>
+                        </div>
+                        <div>
+                            <h4 class="font-display font-bold text-sm text-primary">Teléfono</h4>
+                            <a href="tel:022528551" class="text-xs sm:text-sm text-on-surface-variant hover:text-primary transition-colors">022-528-551</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-whatsapp-green flex-shrink-0">
+                            <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+                        </div>
+                        <div>
+                            <h4 class="font-display font-bold text-sm text-primary">WhatsApp</h4>
+                            <a href="https://wa.me/593998720970" target="_blank" class="text-xs sm:text-sm text-on-surface-variant hover:text-whatsapp-green transition-colors font-medium">+593 99 872 0970</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form Card -->
+            <div class="lg:col-span-7">
+                <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-[0px_10px_40px_rgba(0,0,0,0.06)] border border-border-subtle">
+                    <form id="level-test-form" class="space-y-4" onsubmit="handleFormSubmit(event)">
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-on-surface mb-1.5" for="firstName">Nombre *</label>
+                                <input 
+                                    class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-sm" 
+                                    id="firstName" 
+                                    name="firstName" 
+                                    required 
+                                    type="text"
+                                    placeholder="Ej. Carlos"
+                                >
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-on-surface mb-1.5" for="lastName">Apellido *</label>
+                                <input 
+                                    class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-sm" 
+                                    id="lastName" 
+                                    name="lastName" 
+                                    required 
+                                    type="text"
+                                    placeholder="Ej. Morales"
+                                >
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-on-surface mb-1.5" for="email">Dirección de correo electrónico *</label>
+                            <input 
+                                class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-sm" 
+                                id="email" 
+                                name="email" 
+                                required 
+                                type="email"
+                                placeholder="carlos.morales@ejemplo.com"
+                            >
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-on-surface mb-1.5" for="phone">Celular (WhatsApp) *</label>
+                            <input 
+                                class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-sm" 
+                                id="phone" 
+                                name="phone" 
+                                required 
+                                type="tel"
+                                placeholder="099 123 4567"
+                            >
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-on-surface mb-1.5" for="location">¿Dónde quieres estudiar?</label>
+                            <select 
+                                class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-sm text-on-surface" 
+                                id="location" 
+                                name="location"
+                            >
+                                <option value="">Selecciona una opción</option>
+                                <option value="mariscal">Sede La Mariscal (Quito Norte)</option>
+                                <option value="calderon">Sede Calderón</option>
+                                <option value="online">100% Online en vivo</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-on-surface mb-1.5" for="course">¿En qué estás interesad@?</label>
+                            <select 
+                                class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-sm text-on-surface" 
+                                id="course" 
+                                name="course"
+                            >
+                                <option value="">Selecciona un curso</option>
+                                <option value="ingles">Curso de inglés general</option>
+                                <option value="aptis">Examen de inglés Aptis / Cambridge</option>
+                                <option value="personalizado">Curso personalizado 1 a 1</option>
+                                <option value="empresas">Curso para empresas</option>
+                            </select>
+                        </div>
+
+                        <button 
+                            id="submit-btn"
+                            class="w-full mt-6 bg-primary text-white font-semibold text-sm py-4 rounded-xl hover:bg-primary-container transition-all shadow-md hover:shadow-lg active:scale-95 flex justify-center items-center gap-2" 
+                            type="submit"
+                        >
+                            <span class="material-symbols-outlined text-xl">edit_note</span>
+                            <span>Quiero mi prueba de nivel gratis · ¡Sin costo!</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-border-subtle w-full py-12 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="col-span-1 md:col-span-2">
+                <a class="font-display text-2xl font-bold text-primary mb-3 block" href="#">
+                    CENDIA
+                </a>
+                <p class="text-sm text-on-surface-variant mb-4 max-w-sm">Academic Excellence in Quito. Formación en inglés con estándares internacionales y resultados comprobados.</p>
+                <div class="flex items-center gap-3 text-on-surface-variant">
+                    <a class="w-9 h-9 rounded-full bg-surface-gray border border-border-subtle flex items-center justify-center hover:text-primary hover:border-primary transition-colors" href="#" title="Web">
+                        <span class="material-symbols-outlined text-lg">public</span>
+                    </a>
+                    <a class="w-9 h-9 rounded-full bg-surface-gray border border-border-subtle flex items-center justify-center hover:text-emerald-600 hover:border-emerald-600 transition-colors" href="https://wa.me/593998720970" target="_blank" title="WhatsApp">
+                        <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">chat</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-span-1">
+                <h4 class="font-display font-bold text-sm text-primary mb-4 uppercase tracking-wider">Menú</h4>
+                <ul class="space-y-2.5 text-sm">
+                    <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Inicio</a></li>
+                    <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#cursos">Cursos</a></li>
+                    <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#metodo">Método</a></li>
+                    <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#precios">Precios</a></li>
+                </ul>
+            </div>
+
+            <div class="col-span-1">
+                <h4 class="font-display font-bold text-sm text-primary mb-4 uppercase tracking-wider">Legal</h4>
+                <ul class="space-y-2.5 text-sm">
+                    <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+                    <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+                    <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#contacto">Soporte y Atención</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-10 pt-6 border-t border-border-subtle text-center text-xs text-on-surface-variant">
+            <p>© 2026 Cendia English Institute - Academic Excellence in Quito. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bottom Navigation Bar (Mobile) -->
+    <nav class="bg-white/95 backdrop-blur-md fixed bottom-0 w-full md:hidden z-50 border-t border-border-subtle shadow-[0_-4px_20px_rgba(0,0,0,0.05)] flex justify-around items-center h-16">
+        <a class="text-on-surface-variant hover:text-primary flex flex-col items-center flex-1 py-1.5 transition-colors" href="tel:022528551">
+            <span class="material-symbols-outlined text-xl">call</span>
+            <span class="text-[11px] font-medium mt-0.5">Llamar</span>
+        </a>
+        <a class="text-whatsapp-green flex flex-col items-center flex-1 py-1.5 transition-colors" href="https://wa.me/593998720970" target="_blank">
+            <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+            <span class="text-[11px] font-bold mt-0.5">WhatsApp</span>
+        </a>
+        <a class="text-on-surface-variant hover:text-primary flex flex-col items-center flex-1 py-1.5 transition-colors" href="#cursos">
+            <span class="material-symbols-outlined text-xl">school</span>
+            <span class="text-[11px] font-medium mt-0.5">Cursos</span>
+        </a>
+        <a class="text-on-surface-variant hover:text-primary flex flex-col items-center flex-1 py-1.5 transition-colors" href="#contacto">
+            <span class="material-symbols-outlined text-xl">location_on</span>
+            <span class="text-[11px] font-medium mt-0.5">Contacto</span>
+        </a>
+    </nav>
+
+    <!-- Floating WhatsApp Button (Desktop) -->
+    <a 
+        class="hidden md:flex fixed bottom-8 right-8 bg-whatsapp-green text-white w-14 h-14 rounded-full items-center justify-center shadow-xl hover:scale-110 transition-transform z-40 pulse-whatsapp" 
+        href="https://wa.me/593998720970?text=Hola,%20quisiera%20información%20sobre%20los%20cursos%20de%20inglés" 
+        target="_blank"
+        title="Contáctanos por WhatsApp"
+    >
+        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <!-- Chatbot Container -->
+    <div id="chatbot-container" class="fixed bottom-24 right-4 sm:right-8 z-50 hidden transition-all duration-300 transform scale-95 opacity-0">
+        <div class="bg-white w-[340px] sm:w-[370px] h-[520px] rounded-3xl shadow-2xl border border-border-subtle flex flex-col overflow-hidden">
+            <!-- Header -->
+            <div class="bg-primary p-4 flex justify-between items-center text-white">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-xl">smart_toy</span>
+                    </div>
+                    <div>
+                        <span class="font-display font-bold text-sm block">Asistente Cendia</span>
+                        <span class="text-[11px] text-emerald-300 flex items-center gap-1 font-medium">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping inline-block"></span> En línea
+                        </span>
+                    </div>
+                </div>
+                <button onclick="toggleChatbot()" class="hover:bg-white/10 rounded-full p-1.5 transition-colors" aria-label="Cerrar chat">
+                    <span class="material-symbols-outlined text-lg">close</span>
+                </button>
+            </div>
+
+            <!-- Message Area -->
+            <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-3.5 bg-surface-gray text-sm">
+                <div class="flex items-start gap-2.5">
+                    <div class="w-7 h-7 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 text-xs mt-1">
+                        <span class="material-symbols-outlined text-sm">smart_toy</span>
+                    </div>
+                    <div class="bg-white text-on-surface p-3.5 rounded-2xl rounded-tl-none shadow-sm border border-border-subtle leading-relaxed">
+                        ¡Hola! 👋 Soy el asistente virtual de <strong>Cendia English Institute</strong>. ¿En qué puedo ayudarte hoy?
+                    </div>
+                </div>
+
+                <!-- Quick Action Chips -->
+                <div class="flex flex-wrap gap-2 pt-2" id="quick-chips">
+                    <button onclick="sendQuickReply('Ver cursos')" class="px-3 py-1.5 bg-white border border-primary/30 text-primary font-medium rounded-full text-xs hover:bg-primary hover:text-white transition-all shadow-sm">Ver cursos</button>
+                    <button onclick="sendQuickReply('Prueba de nivel')" class="px-3 py-1.5 bg-white border border-primary/30 text-primary font-medium rounded-full text-xs hover:bg-primary hover:text-white transition-all shadow-sm">Prueba de nivel gratis</button>
+                    <button onclick="sendQuickReply('Sedes y horarios')" class="px-3 py-1.5 bg-white border border-primary/30 text-primary font-medium rounded-full text-xs hover:bg-primary hover:text-white transition-all shadow-sm">Sedes y horarios</button>
+                    <button onclick="sendQuickReply('Precios')" class="px-3 py-1.5 bg-white border border-primary/30 text-primary font-medium rounded-full text-xs hover:bg-primary hover:text-white transition-all shadow-sm">Precios y promociones</button>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="p-3.5 border-t border-border-subtle bg-white">
+                <form id="chat-form" onsubmit="handleChatSubmit(event)" class="relative flex items-center">
+                    <input 
+                        type="text" 
+                        id="chat-input"
+                        placeholder="Escribe tu consulta..." 
+                        class="w-full pl-4 pr-12 py-3 rounded-full border border-outline-variant bg-surface-gray focus:bg-white focus:ring-2 focus:ring-primary focus:border-primary outline-none text-xs sm:text-sm"
+                        autocomplete="off"
+                    >
+                    <button type="submit" class="absolute right-2.5 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:bg-primary-container transition-transform hover:scale-105" aria-label="Enviar mensaje">
+                        <span class="material-symbols-outlined text-sm">send</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot Trigger Button -->
+    <button 
+        id="chatbot-trigger-btn"
+        onclick="toggleChatbot()" 
+        class="hidden md:flex fixed bottom-8 right-24 bg-primary text-white w-14 h-14 rounded-full items-center justify-center shadow-xl hover:scale-110 transition-transform z-40"
+        title="Abrir chat de ayuda"
+    >
+        <span class="material-symbols-outlined text-2xl">chat</span>
+    </button>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[200] hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl p-8 max-w-md w-full text-center shadow-2xl border border-border-subtle transform transition-all animate-scale-in">
+            <div class="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-4">
+                <span class="material-symbols-outlined text-4xl">check_circle</span>
+            </div>
+            <h3 class="font-display font-bold text-2xl text-primary mb-2">¡Solicitud Recibida!</h3>
+            <p class="text-sm text-on-surface-variant mb-6 leading-relaxed" id="modal-message">
+                Gracias por registrarte. Un asesor académico de Cendia se comunicará contigo vía WhatsApp o llamada para coordinar tu prueba de nivel gratuita.
+            </p>
+            <div class="flex flex-col gap-3">
+                <a id="modal-whatsapp-link" href="#" target="_blank" class="w-full py-3.5 px-4 rounded-xl bg-whatsapp-green text-white font-semibold text-sm hover:bg-whatsapp-green-hover transition-all flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">chat</span>
+                    Confirmar por WhatsApp ahora
+                </a>
+                <button onclick="closeSuccessModal()" class="w-full py-3 px-4 rounded-xl bg-surface-gray text-on-surface-variant font-semibold text-xs hover:bg-surface-container-high transition-colors">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

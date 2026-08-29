@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Ubicación y Contacto | CENDIA English Institute Quito</title>
+    <meta name="description" content="Visítanos en La Mariscal (Baquerizo Moreno E8-26 y Almagro, Quito) o agenda tu prueba de ubicación presencial ($20). Contáctanos por WhatsApp.">
+    
+    <!-- Favicon Oficial -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "cendia-red": "#C51F2A",
+                        "cendia-red-dark": "#991B1B",
+                        "cendia-red-deep": "#7F1D1D",
+                        "cendia-red-light": "#DC2626",
+                        "cendia-red-soft": "#FEF2F2",
+                        "secondary": "#0F172A",
+                        "whatsapp-green": "#25D366",
+                        "whatsapp-green-hover": "#20ba59",
+                        "surface-gray": "#F8FAFC",
+                        "border-subtle": "#E2E8F0"
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        display: ["Montserrat", "sans-serif"]
+                    },
+                    maxWidth: {
+                        "container-max": "1280px"
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#FAFAFA] text-slate-900 font-sans antialiased selection:bg-cendia-red selection:text-white pb-20 md:pb-0">
+
+    <!-- Top Bar -->
+    <div class="bg-secondary text-white py-2 px-4 text-xs font-medium border-b border-slate-800">
+        <div class="max-w-container-max mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-2 justify-center">
+                <span class="inline-flex items-center gap-1 bg-cendia-red text-white text-[10px] uppercase font-black px-2 py-0.5 rounded-full tracking-wider">Oficial</span>
+                <span>Instituto avalado por <strong>SETEC</strong> · Centro Evaluador <strong>CAMBRIDGE & OXFORD</strong></span>
+            </div>
+            <div class="flex items-center gap-4 text-slate-300">
+                <a href="tel:022528551" class="hover:text-white transition-colors flex items-center gap-1">
+                    <span class="material-symbols-outlined text-sm">call</span> 022-528-551
+                </a>
+                <a href="https://wa.me/593998720970" target="_blank" class="hover:text-whatsapp-green transition-colors flex items-center gap-1 font-semibold">
+                    <span class="material-symbols-outlined text-sm text-whatsapp-green" style="font-variation-settings: 'FILL' 1;">chat</span> +593 99 872 0970
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 w-full z-40 border-b border-border-subtle shadow-sm">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-4 sm:px-8 py-3.5">
+            <a class="flex items-center hover:opacity-95 transition-opacity" href="index.html">
+                <img src="logo.svg" alt="CENDIA Language Institute" class="h-10 sm:h-11 w-auto object-contain">
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-6">
+                <a class="font-semibold text-xs uppercase tracking-wider text-slate-700 hover:text-cendia-red transition-colors py-2" href="index.html">Inicio</a>
+                <a class="font-semibold text-xs uppercase tracking-wider text-slate-700 hover:text-cendia-red transition-colors py-2" href="programa.html">Programa (12 Niveles)</a>
+                <a class="font-semibold text-xs uppercase tracking-wider text-slate-700 hover:text-cendia-red transition-colors py-2" href="horarios.html">Horarios</a>
+                <a class="font-semibold text-xs uppercase tracking-wider text-slate-700 hover:text-cendia-red transition-colors py-2" href="precios.html">Costos & Precios</a>
+                <a class="font-bold text-xs uppercase tracking-wider text-cendia-red py-2 border-b-2 border-cendia-red" href="contacto.html">Ubicación & Contacto</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <a class="text-xs font-bold bg-cendia-red text-white px-4 sm:px-5 py-2.5 rounded-xl hover:bg-cendia-red-dark transition-all shadow-md shadow-red-900/20 text-center flex items-center gap-1.5" href="#agendar">
+                    <span class="material-symbols-outlined text-base">fact_check</span>
+                    <span>Prueba de Ubicación ($20)</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="py-12 sm:py-16 bg-gradient-to-b from-cendia-red-soft via-white to-surface-gray border-b border-border-subtle">
+        <div class="max-w-container-max mx-auto px-4 sm:px-8 text-center max-w-3xl">
+            <span class="text-xs font-black text-cendia-red uppercase tracking-widest bg-white px-3.5 py-1.5 rounded-full border border-red-200 shadow-sm">Atención Personalizada</span>
+            <h1 class="font-display text-3xl sm:text-5xl font-black text-slate-900 mt-4 mb-4">Ubicación y Contacto</h1>
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                Visítanos en nuestras oficinas de La Mariscal para rendir tu <strong>Prueba de Ubicación ($20)</strong> o contáctanos por WhatsApp para resolver cualquier duda.
+            </p>
+        </div>
+    </section>
+
+    <!-- Content Grid: Info + Google Maps -->
+    <section class="py-16 bg-white">
+        <div class="max-w-container-max mx-auto px-4 sm:px-8">
+            
+            <div class="grid lg:grid-cols-12 gap-8 items-start mb-16">
+                <!-- Location details card -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="bg-surface-gray p-6 sm:p-8 rounded-3xl border border-border-subtle shadow-sm space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-cendia-red-soft border border-red-200 flex items-center justify-center text-cendia-red flex-shrink-0">
+                                <span class="material-symbols-outlined text-2xl">location_on</span>
+                            </div>
+                            <div>
+                                <h3 class="font-display font-bold text-lg text-slate-900">Sede La Mariscal – Quito</h3>
+                                <p class="text-sm text-slate-600 mt-0.5 font-medium">Baquerizo Moreno E8-26 y Almagro</p>
+                                <a href="https://maps.google.com/maps/search/CENDIA/@-0.20270000398159027,-78.48860168457031,17z?hl=es" target="_blank" class="inline-flex items-center gap-1 text-xs font-bold text-cendia-red hover:underline mt-2">
+                                    <span>Abrir en Google Maps</span>
+                                    <span class="material-symbols-outlined text-sm">open_in_new</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Prueba de Ubicación Schedule Box -->
+                        <div class="border-t border-slate-200 pt-5">
+                            <div class="flex items-center gap-2 text-xs font-bold uppercase text-cendia-red mb-3">
+                                <span class="material-symbols-outlined text-base">fact_check</span>
+                                <span>Horarios para Prueba de Ubicación ($20 en oficinas):</span>
+                            </div>
+                            <div class="space-y-2.5 text-xs text-slate-700 bg-white p-4 rounded-2xl border border-slate-200">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-semibold">Lunes a Viernes:</span>
+                                    <span class="font-bold text-slate-900 bg-slate-100 px-2 py-1 rounded">7:00 am a 3:00 pm</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="font-semibold">Sábados:</span>
+                                    <span class="font-bold text-slate-900 bg-slate-100 px-2 py-1 rounded">9:00 am a 12:00 pm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Channels -->
+                        <div class="border-t border-slate-200 pt-5 space-y-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-9 h-9 rounded-xl bg-slate-200 flex items-center justify-center text-slate-700">
+                                    <span class="material-symbols-outlined text-base">call</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-500 font-semibold">Teléfono Fijo</p>
+                                    <a href="tel:022528551" class="font-bold text-slate-900 hover:text-cendia-red transition-colors text-sm">022-528-551</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <div class="w-9 h-9 rounded-xl bg-emerald-100 flex items-center justify-center text-whatsapp-green">
+                                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">chat</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-500 font-semibold">WhatsApp Oficial</p>
+                                    <a href="https://wa.me/593998720970" target="_blank" class="font-bold text-whatsapp-green hover:underline text-sm">+593 99 872 0970</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps Interactive Iframe -->
+                <div class="lg:col-span-7">
+                    <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-white h-[440px] relative bg-slate-100">
+                        <iframe 
+                            title="Ubicación CENDIA English Institute"
+                            src="https://maps.google.com/maps?q=-0.20270000398159027,-78.48860168457031&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="w-full h-full"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lead Capture Contact Form -->
+            <div class="bg-surface-gray rounded-3xl p-8 sm:p-12 border border-border-subtle shadow-md" id="agendar">
+                <div class="max-w-2xl mx-auto text-center mb-8">
+                    <span class="text-xs font-black text-cendia-red uppercase tracking-widest bg-cendia-red-soft px-3 py-1 rounded-full border border-red-200">Formulario Directo</span>
+                    <h2 class="font-display font-black text-2xl sm:text-3xl text-slate-900 mt-3 mb-2">Agenda tu Cita o Solicita Información</h2>
+                    <p class="text-xs sm:text-sm text-slate-600">Completa el formulario y nos comunicaremos de inmediato vía WhatsApp para confirmar tu horario.</p>
+                </div>
+
+                <div class="max-w-2xl mx-auto bg-white p-6 sm:p-10 rounded-2xl shadow-sm border border-border-subtle">
+                    <form id="contact-page-form" class="space-y-4" onsubmit="handleFormSubmit(event)">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-800 mb-1.5" for="firstName">Nombre *</label>
+                                <input 
+                                    class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm" 
+                                    id="firstName" 
+                                    name="firstName" 
+                                    required 
+                                    type="text"
+                                    placeholder="Ej. Juan"
+                                >
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-800 mb-1.5" for="lastName">Apellido *</label>
+                                <input 
+                                    class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm" 
+                                    id="lastName" 
+                                    name="lastName" 
+                                    required 
+                                    type="text"
+                                    placeholder="Ej. Pérez"
+                                >
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-800 mb-1.5" for="phone">Celular (WhatsApp) *</label>
+                            <input 
+                                class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm" 
+                                id="phone" 
+                                name="phone" 
+                                required 
+                                type="tel"
+                                placeholder="Ej. 099 123 4567"
+                            >
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-800 mb-1.5" for="email">Correo electrónico *</label>
+                            <input 
+                                class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm" 
+                                id="email" 
+                                name="email" 
+                                required 
+                                type="email"
+                                placeholder="juan.perez@ejemplo.com"
+                            >
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-800 mb-1.5" for="schedule">Horario de Interés</label>
+                                <select 
+                                    class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm text-slate-900" 
+                                    id="schedule" 
+                                    name="schedule"
+                                >
+                                    <option value="Presencial: 7:00 am - 8:40 am">Presencial: 7:00 am - 8:40 am</option>
+                                    <option value="Presencial: 9:00 am - 10:50 am">Presencial: 9:00 am - 10:50 am</option>
+                                    <option value="Presencial: 3:00 pm - 4:50 pm">Presencial: 3:00 pm - 4:50 pm</option>
+                                    <option value="Sábados: 8:00 am - 1:00 pm">Sábados: 8:00 am - 1:00 pm</option>
+                                    <option value="Online: 5:00 pm - 6:50 pm">Online: 5:00 pm - 6:50 pm</option>
+                                    <option value="Online: 7:00 pm - 8:40 pm">Online: 7:00 pm - 8:40 pm</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-800 mb-1.5" for="service">Servicio Solicitado</label>
+                                <select 
+                                    class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm text-slate-900" 
+                                    id="service" 
+                                    name="service"
+                                >
+                                    <option value="Prueba de Ubicación ($20 en oficinas)">Prueba de Ubicación ($20 en oficinas)</option>
+                                    <option value="Inscripción Programa 12 Meses (L-V)">Inscripción Programa 12 Meses (L-V)</option>
+                                    <option value="Inscripción Programa Sábados (15 Meses)">Inscripción Programa Sábados (15 Meses)</option>
+                                    <option value="Certificación Cambridge / SETEC / Oxford">Certificación Cambridge / SETEC / Oxford</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button 
+                            id="submit-btn"
+                            class="w-full mt-6 bg-cendia-red text-white font-bold text-sm py-4 rounded-xl hover:bg-cendia-red-dark transition-all shadow-lg shadow-red-900/25 active:scale-95 flex justify-center items-center gap-2" 
+                            type="submit"
+                        >
+                            <span class="material-symbols-outlined text-xl">send</span>
+                            <span>Enviar y Confirmar Cita por WhatsApp</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white w-full py-12 border-t border-slate-800">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-container-max mx-auto px-4 sm:px-8">
+            <div class="col-span-1 md:col-span-2">
+                <a class="flex items-center mb-4" href="index.html">
+                    <img src="logo.svg" alt="CENDIA Language Institute" class="h-10 w-auto brightness-200">
+                </a>
+                <p class="text-sm text-slate-400 mb-4 max-w-sm">Instituto de Inglés avalado por SETEC y Centro Evaluador Cambridge & Oxford en Quito, Ecuador.</p>
+                <p class="text-xs text-slate-400">📍 Baquerizo Moreno E8-26 y Almagro, La Mariscal · Tel: 022-528-551</p>
+            </div>
+            <div class="col-span-1">
+                <h4 class="font-display font-bold text-xs text-cendia-red uppercase tracking-wider mb-4">Páginas</h4>
+                <ul class="space-y-2 text-xs text-slate-400">
+                    <li><a class="hover:text-white" href="index.html">Inicio</a></li>
+                    <li><a class="hover:text-white" href="programa.html">Programa (12 Niveles)</a></li>
+                    <li><a class="hover:text-white" href="horarios.html">Horarios</a></li>
+                    <li><a class="hover:text-white" href="precios.html">Costos</a></li>
+                    <li><a class="hover:text-white" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-span-1">
+                <h4 class="font-display font-bold text-xs text-cendia-red uppercase tracking-wider mb-4">Prueba de Ubicación</h4>
+                <p class="text-xs text-slate-400 mb-2">Costo: USD $20 en oficinas</p>
+                <p class="text-xs text-slate-400 mb-3">L-V: 7am - 3pm | Sáb: 9am - 12pm</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Navigation Bar (Mobile) -->
+    <nav class="bg-white/95 backdrop-blur-md fixed bottom-0 w-full md:hidden z-50 border-t border-border-subtle shadow-lg flex justify-around items-center h-16">
+        <a class="text-slate-600 hover:text-cendia-red flex flex-col items-center flex-1 py-1.5" href="index.html">
+            <span class="material-symbols-outlined text-xl">home</span>
+            <span class="text-[10px] font-bold mt-0.5">Inicio</span>
+        </a>
+        <a class="text-slate-600 hover:text-cendia-red flex flex-col items-center flex-1 py-1.5" href="programa.html">
+            <span class="material-symbols-outlined text-xl">school</span>
+            <span class="text-[10px] font-bold mt-0.5">Programa</span>
+        </a>
+        <a class="text-slate-600 hover:text-cendia-red flex flex-col items-center flex-1 py-1.5" href="horarios.html">
+            <span class="material-symbols-outlined text-xl">schedule</span>
+            <span class="text-[10px] font-bold mt-0.5">Horarios</span>
+        </a>
+        <a class="text-slate-600 hover:text-cendia-red flex flex-col items-center flex-1 py-1.5" href="precios.html">
+            <span class="material-symbols-outlined text-xl">payments</span>
+            <span class="text-[10px] font-bold mt-0.5">Costos</span>
+        </a>
+        <a class="text-cendia-red flex flex-col items-center flex-1 py-1.5" href="contacto.html">
+            <span class="material-symbols-outlined text-xl">location_on</span>
+            <span class="text-[10px] font-bold mt-0.5">Contacto</span>
+        </a>
+    </nav>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[200] hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl p-8 max-w-md w-full text-center shadow-2xl border border-border-subtle transform transition-all animate-scale-in">
+            <div class="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-4">
+                <span class="material-symbols-outlined text-4xl">check_circle</span>
+            </div>
+            <h3 class="font-display font-black text-2xl text-slate-900 mb-2">¡Solicitud Registrada!</h3>
+            <p class="text-sm text-slate-600 mb-6 leading-relaxed" id="modal-message">
+                Hemos preparado tu solicitud para enviarla directamente a nuestro equipo de admisiones.
+            </p>
+            <div class="flex flex-col gap-3">
+                <a id="modal-whatsapp-link" href="#" target="_blank" class="w-full py-3.5 px-4 rounded-xl bg-whatsapp-green text-white font-bold text-sm hover:bg-whatsapp-green-hover transition-all flex items-center justify-center gap-2 shadow-md">
+                    <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">chat</span>
+                    Confirmar por WhatsApp ahora
+                </a>
+                <button onclick="closeSuccessModal()" class="w-full py-3 px-4 rounded-xl bg-surface-gray text-slate-600 font-bold text-xs hover:bg-slate-200 transition-colors">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp -->
+    <a class="hidden md:flex fixed bottom-8 right-8 bg-whatsapp-green text-white w-14 h-14 rounded-full items-center justify-center shadow-2xl hover:scale-110 transition-transform z-40 pulse-whatsapp" href="https://wa.me/593998720970" target="_blank">
+        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </a>
+
+    <script src="app.js"></script>
+</body>
+</html>

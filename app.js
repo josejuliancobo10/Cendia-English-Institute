@@ -53,7 +53,7 @@ function handleFormSubmit(event) {
 
         // Update modal
         const modalMessage = document.getElementById('modal-message');
-        modalMessage.innerHTML = `¡Gracias <strong>${firstName}</strong>! Hemos registrado tu interés en <strong>${service}</strong> para el horario <strong>${schedule}</strong>. Te contactaremos al <strong>${phone}</strong> para coordinar tu cita o prueba de ubicación ($20).`;
+        modalMessage.innerHTML = `¡Gracias <strong>${firstName}</strong>! Hemos registrado tu interés en <strong>${service}</strong> para el horario <strong>${schedule}</strong>. Te contactaremos al <strong>${phone}</strong> para coordinar tu cita o prueba de ubicación.`;
 
         const modalWhatsappLink = document.getElementById('modal-whatsapp-link');
         modalWhatsappLink.href = whatsappUrl;
@@ -187,14 +187,14 @@ function respondToQuery(query) {
         • <strong>Sábados (15 meses):</strong> USD $100 mensuales.<br>
         • <strong>Matrícula anual:</strong> USD $70.<br>
         • <strong>Plataforma digital:</strong> USD $36 (para todo el programa).<br>
-        • <strong>Prueba de ubicación:</strong> USD $20 en oficinas.<br><br>
-        <a href="#costos" onclick="toggleChatbot()" class="text-cendia-red font-bold hover:underline">Ver tabla completa de precios →</a>`;
+        • <strong>Prueba de ubicación:</strong> Presencial en oficinas.<br><br>
+        <a href="precios.html" class="text-cendia-red font-bold hover:underline">Ver tabla completa de precios →</a>`;
     } else if (q.includes('prueba') || q.includes('ubicacion') || q.includes('ubicación') || q.includes('test')) {
-        reply = `<strong>Prueba de Ubicación ($20 en oficinas):</strong><br>
+        reply = `<strong>Prueba de Ubicación (en oficinas):</strong><br>
         Se rinde de forma presencial en La Mariscal:<br>
         • <strong>Lunes a Viernes:</strong> 7:00 am a 3:00 pm<br>
         • <strong>Sábados:</strong> 9:00 am a 12:00 pm<br><br>
-        <a href="#contacto" onclick="toggleChatbot()" class="inline-block bg-cendia-red text-white text-xs px-3 py-1.5 rounded-lg font-bold hover:bg-cendia-red-dark">Agendar prueba ahora</a>`;
+        <a href="contacto.html" class="inline-block bg-cendia-red text-white text-xs px-3 py-1.5 rounded-lg font-bold hover:bg-cendia-red-dark">Agendar prueba ahora</a>`;
     } else if (q.includes('setec') || q.includes('cambridge') || q.includes('oxford') || q.includes('certificado') || q.includes('aval')) {
         reply = `<strong>Avales y Certificaciones Oficiales:</strong><br>
         • <strong>SETEC:</strong> Instituto avalado. Certificado nacional de Inglés Avanzado.<br>
@@ -204,9 +204,9 @@ function respondToQuery(query) {
         reply = `📍 <strong>Sede Principal Quito:</strong><br>
         Baquerizo Moreno E8-26 y Almagro (La Mariscal).<br>
         Teléfono: 022-528-551 | WhatsApp: +593 99 872 0970<br><br>
-        <a href="#ubicacion" onclick="toggleChatbot()" class="text-cendia-red font-bold hover:underline">Ver mapa interactivo →</a>`;
+        <a href="contacto.html" class="text-cendia-red font-bold hover:underline">Ver mapa interactivo →</a>`;
     } else {
-        reply = `Con gusto te atendemos. Puedes consultar sobre horarios, los 12 niveles, costos o agendar tu prueba de ubicación ($20).<br><br>
+        reply = `Con gusto te atendemos. Puedes consultar sobre horarios, los 12 niveles, costos o agendar tu prueba de ubicación.<br><br>
         <a href="https://wa.me/593998720970" target="_blank" class="text-whatsapp-green font-bold hover:underline">💬 Hablar con un asesor por WhatsApp</a>`;
     }
 

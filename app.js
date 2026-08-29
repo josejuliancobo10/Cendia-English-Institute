@@ -1,4 +1,4 @@
-// Application logic for Cendia English Institute Website
+// Application logic for CENDIA English Institute Website
 
 document.addEventListener('DOMContentLoaded', () => {
     // Header shadow on scroll
@@ -32,10 +32,10 @@ function handleFormSubmit(event) {
     // Extract form data
     const firstName = form.firstName.value.trim();
     const lastName = form.lastName.value.trim();
-    const email = form.email.value.trim();
     const phone = form.phone.value.trim();
-    const location = form.location.options[form.location.selectedIndex].text;
-    const course = form.course.options[form.course.selectedIndex].text;
+    const email = form.email.value.trim();
+    const schedule = form.schedule.value;
+    const service = form.service.value;
 
     // Loading state
     const originalText = submitBtn.innerHTML;
@@ -44,12 +44,16 @@ function handleFormSubmit(event) {
 
     setTimeout(() => {
         // Construct WhatsApp message URL
-        const whatsappMsg = `¡Hola Cendia! Mi nombre es ${firstName} ${lastName}. Me gustaría agendar mi prueba de nivel gratis para el curso: ${course} en la modalidad/sede: ${location}. Mi correo es ${email} y teléfono: ${phone}.`;
+        const whatsappMsg = `¡Hola CENDIA! Mi nombre es ${firstName} ${lastName}.\n` +
+            `Quisiera información sobre: ${service}\n` +
+            `Horario de interés: ${schedule}\n` +
+            `Mi teléfono es: ${phone} y mi correo: ${email}.`;
+
         const whatsappUrl = `https://wa.me/593998720970?text=${encodeURIComponent(whatsappMsg)}`;
 
         // Update modal
         const modalMessage = document.getElementById('modal-message');
-        modalMessage.innerHTML = `¡Gracias <strong>${firstName}</strong>! Hemos recibido tu solicitud para <strong>${course}</strong>. Uno de nuestros asesores académicos te contactará al <strong>${phone}</strong> para agendar tu prueba de nivel sin costo.`;
+        modalMessage.innerHTML = `¡Gracias <strong>${firstName}</strong>! Hemos registrado tu interés en <strong>${service}</strong> para el horario <strong>${schedule}</strong>. Te contactaremos al <strong>${phone}</strong> para coordinar tu cita o prueba de ubicación ($20).`;
 
         const modalWhatsappLink = document.getElementById('modal-whatsapp-link');
         modalWhatsappLink.href = whatsappUrl;
@@ -62,7 +66,7 @@ function handleFormSubmit(event) {
         // Show Modal
         const modal = document.getElementById('success-modal');
         modal.classList.remove('hidden');
-    }, 800);
+    }, 600);
 }
 
 function closeSuccessModal() {
@@ -111,10 +115,10 @@ function appendUserMessage(text) {
     const messagesContainer = document.getElementById('chat-messages');
     const userMsgHtml = `
         <div class="flex items-start justify-end gap-2.5">
-            <div class="bg-primary text-white p-3 rounded-2xl rounded-tr-none shadow-sm text-xs sm:text-sm max-w-[80%] leading-relaxed">
+            <div class="bg-cendia-red text-white p-3 rounded-2xl rounded-tr-none shadow-sm text-xs sm:text-sm max-w-[80%] leading-relaxed">
                 ${escapeHtml(text)}
             </div>
-            <div class="w-7 h-7 rounded-full bg-primary/20 text-primary flex items-center justify-center flex-shrink-0 text-xs mt-1">
+            <div class="w-7 h-7 rounded-full bg-red-100 text-cendia-red flex items-center justify-center flex-shrink-0 text-xs mt-1">
                 <span class="material-symbols-outlined text-sm">person</span>
             </div>
         </div>
@@ -130,10 +134,10 @@ function appendBotMessage(htmlContent) {
     const typingId = 'typing-' + Date.now();
     const typingHtml = `
         <div id="${typingId}" class="flex items-start gap-2.5">
-            <div class="w-7 h-7 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 text-xs mt-1">
+            <div class="w-7 h-7 rounded-full bg-cendia-red text-white flex items-center justify-center flex-shrink-0 text-xs mt-1">
                 <span class="material-symbols-outlined text-sm">smart_toy</span>
             </div>
-            <div class="bg-white text-on-surface p-3 rounded-2xl rounded-tl-none shadow-sm border border-border-subtle text-xs sm:text-sm">
+            <div class="bg-white text-slate-700 p-3 rounded-2xl rounded-tl-none shadow-sm border border-border-subtle text-xs sm:text-sm">
                 <span class="inline-block animate-pulse">Escribiendo...</span>
             </div>
         </div>
@@ -147,56 +151,63 @@ function appendBotMessage(htmlContent) {
 
         const botMsgHtml = `
             <div class="flex items-start gap-2.5">
-                <div class="w-7 h-7 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 text-xs mt-1">
+                <div class="w-7 h-7 rounded-full bg-cendia-red text-white flex items-center justify-center flex-shrink-0 text-xs mt-1">
                     <span class="material-symbols-outlined text-sm">smart_toy</span>
                 </div>
-                <div class="bg-white text-on-surface p-3.5 rounded-2xl rounded-tl-none shadow-sm border border-border-subtle text-xs sm:text-sm leading-relaxed max-w-[85%]">
+                <div class="bg-white text-slate-800 p-3.5 rounded-2xl rounded-tl-none shadow-sm border border-border-subtle text-xs sm:text-sm leading-relaxed max-w-[85%]">
                     ${htmlContent}
                 </div>
             </div>
         `;
         messagesContainer.insertAdjacentHTML('beforeend', botMsgHtml);
         messagesContainer.scrollTop = messagesContainer.scrollHeight;
-    }, 600);
+    }, 500);
 }
 
 function respondToQuery(query) {
     const q = query.toLowerCase();
     let reply = '';
 
-    if (q.includes('curso') || q.includes('ver cursos') || q.includes('programa')) {
-        reply = `En Cendia ofrecemos:
-        <ul class="list-disc pl-4 mt-2 space-y-1">
-            <li><strong>Inglés General:</strong> Niños, jóvenes y adultos (A1 a C1).</li>
-            <li><strong>Exámenes Internacionales:</strong> Preparación oficial Cambridge y Aptis.</li>
-            <li><strong>Clases 1 a 1:</strong> Horarios personalizados y avance a tu medida.</li>
-            <li><strong>Inglés Corporativo:</strong> Programas para empresas.</li>
-        </ul>
-        <div class="mt-2.5">
-            <a href="#cursos" onclick="toggleChatbot()" class="text-primary font-bold hover:underline">Ver detalles de cursos →</a>
-        </div>`;
-    } else if (q.includes('prueba') || q.includes('nivel') || q.includes('test')) {
-        reply = `¡La <strong>prueba de nivel es 100% gratuita</strong>! Te evalúa un docente en 20-30 minutos y te indica tu nivel exacto según el Marco Común Europeo.<br><br>
-        <a href="#contacto" onclick="toggleChatbot()" class="inline-block bg-primary text-white text-xs px-3 py-1.5 rounded-lg font-semibold hover:bg-primary-container">Agendar prueba ahora</a>`;
-    } else if (q.includes('sede') || q.includes('ubicacion') || q.includes('ubicación') || q.includes('horario') || q.includes('donde') || q.includes('dónde')) {
-        reply = `Estamos ubicados en:
-        <div class="mt-2 space-y-1">
-            📍 <strong>Sede La Mariscal (Quito Norte):</strong> Baquerizo Moreno E8-26 y Almagro.<br>
-            📍 <strong>Sede Calderón</strong>.<br>
-            💻 <strong>Modalidad Online en vivo</strong> vía Zoom HD.<br>
-        </div>
-        <p class="mt-2 text-xs text-on-surface-variant">⏰ Horarios disponibles: Lunes a Viernes (Mañana / Tarde / Noche) y Sábados intensivos.</p>`;
-    } else if (q.includes('precio') || q.includes('costo') || q.includes('valor') || q.includes('tarifa') || q.includes('promocion') || q.includes('promoción')) {
-        reply = `Disponemos de planes accesibles con pago mensual y facilidades con tarjeta de crédito. ¡Además tenemos descuentos especiales por inicio de ciclo este <strong>4 y 6 de junio</strong>!<br><br>
-        <a href="https://wa.me/593998720970?text=Hola,%20quisiera%20conocer%20los%20precios%20y%20promociones" target="_blank" class="inline-flex items-center gap-1 text-whatsapp-green font-bold hover:underline">
-            <span class="material-symbols-outlined text-sm">chat</span> Consultar tarifas por WhatsApp
-        </a>`;
+    if (q.includes('horario') || q.includes('hora') || q.includes('nivel') || q.includes('programa')) {
+        reply = `<strong>Programa Académico CENDIA:</strong><br>
+        12 meses con 12 niveles (1 nivel por mes). Clases de 2 horas académicas diarias.<br><br>
+        📍 <strong>Presencial (Lunes a Viernes):</strong><br>
+        • 7:00 am - 8:40 am<br>
+        • 9:00 am - 10:50 am<br>
+        • 3:00 pm - 4:50 pm<br><br>
+        🗓️ <strong>Sábados (15 Meses):</strong><br>
+        • 8:00 am - 1:00 pm<br><br>
+        💻 <strong>Online en Vivo (Lunes a Viernes):</strong><br>
+        • 5:00 pm - 6:50 pm<br>
+        • 7:00 pm - 8:40 pm`;
+    } else if (q.includes('precio') || q.includes('costo') || q.includes('valor') || q.includes('cuanto') || q.includes('cuánto')) {
+        reply = `<strong>Inversión y Costos Oficiales:</strong><br>
+        • <strong>Nivel 1 al 8:</strong> USD $90 mensuales.<br>
+        • <strong>Nivel 9 al 12:</strong> USD $100 mensuales.<br>
+        • <strong>Sábados (15 meses):</strong> USD $100 mensuales.<br>
+        • <strong>Matrícula anual:</strong> USD $70.<br>
+        • <strong>Plataforma digital:</strong> USD $36 (para todo el programa).<br>
+        • <strong>Prueba de ubicación:</strong> USD $20 en oficinas.<br><br>
+        <a href="#costos" onclick="toggleChatbot()" class="text-cendia-red font-bold hover:underline">Ver tabla completa de precios →</a>`;
+    } else if (q.includes('prueba') || q.includes('ubicacion') || q.includes('ubicación') || q.includes('test')) {
+        reply = `<strong>Prueba de Ubicación ($20 en oficinas):</strong><br>
+        Se rinde de forma presencial en La Mariscal:<br>
+        • <strong>Lunes a Viernes:</strong> 7:00 am a 3:00 pm<br>
+        • <strong>Sábados:</strong> 9:00 am a 12:00 pm<br><br>
+        <a href="#contacto" onclick="toggleChatbot()" class="inline-block bg-cendia-red text-white text-xs px-3 py-1.5 rounded-lg font-bold hover:bg-cendia-red-dark">Agendar prueba ahora</a>`;
+    } else if (q.includes('setec') || q.includes('cambridge') || q.includes('oxford') || q.includes('certificado') || q.includes('aval')) {
+        reply = `<strong>Avales y Certificaciones Oficiales:</strong><br>
+        • <strong>SETEC:</strong> Instituto avalado. Certificado nacional de Inglés Avanzado.<br>
+        • <strong>CAMBRIDGE:</strong> Somos CENTRO EVALUADOR oficial para exámenes Cambridge (FCE).<br>
+        • <strong>OXFORD:</strong> Preparación y certificaciones internacionales.`;
+    } else if (q.includes('donde') || q.includes('dónde') || q.includes('direccion') || q.includes('dirección') || q.includes('mapa')) {
+        reply = `📍 <strong>Sede Principal Quito:</strong><br>
+        Baquerizo Moreno E8-26 y Almagro (La Mariscal).<br>
+        Teléfono: 022-528-551 | WhatsApp: +593 99 872 0970<br><br>
+        <a href="#ubicacion" onclick="toggleChatbot()" class="text-cendia-red font-bold hover:underline">Ver mapa interactivo →</a>`;
     } else {
-        reply = `Con gusto te asesoramos personalmente. ¿Prefieres que te contactemos por WhatsApp o te gustaría agendar tu prueba de nivel gratis?<br><br>
-        <div class="flex flex-col gap-1.5 mt-1">
-            <a href="https://wa.me/593998720970" target="_blank" class="text-whatsapp-green font-semibold hover:underline">💬 Hablar con un asesor en WhatsApp</a>
-            <a href="#contacto" onclick="toggleChatbot()" class="text-primary font-semibold hover:underline">📝 Llenar formulario de contacto</a>
-        </div>`;
+        reply = `Con gusto te atendemos. Puedes consultar sobre horarios, los 12 niveles, costos o agendar tu prueba de ubicación ($20).<br><br>
+        <a href="https://wa.me/593998720970" target="_blank" class="text-whatsapp-green font-bold hover:underline">💬 Hablar con un asesor por WhatsApp</a>`;
     }
 
     appendBotMessage(reply);

@@ -3,13 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Cendia English Institute - Aprende Inglés en Quito</title>
-    <meta name="description" content="Aprende inglés con Cendia English Institute en Quito. Método 100% inmersivo, profesores certificados y centro preparador Cambridge.">
+    <title>Cendia English Institute - Aprende Inglés en Quito | Avalado por SETEC y Cambridge</title>
+    <meta name="description" content="Aprende inglés en Quito con CENDIA English Institute. Programa de 12 meses, avalado por SETEC y Centro Evaluador Cambridge y Oxford. Clases presenciales y online.">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.svg">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS CDN with Plugins -->
@@ -20,28 +24,27 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#00346f",
-                        "primary-container": "#004a99",
+                        "cendia-red": "#b91c1c",
+                        "cendia-red-dark": "#881337",
+                        "cendia-red-deep": "#7f1d1d",
+                        "cendia-red-light": "#dc2626",
+                        "cendia-red-soft": "#fef2f2",
+                        "primary": "#b91c1c",
+                        "primary-container": "#991b1b",
                         "on-primary": "#ffffff",
-                        "on-primary-container": "#9bbdff",
-                        "secondary": "#1f6771",
-                        "secondary-container": "#a8ebf5",
-                        "on-secondary-container": "#246c75",
+                        "secondary": "#0f172a",
+                        "secondary-container": "#fee2e2",
+                        "on-secondary-container": "#991b1b",
                         "whatsapp-green": "#25D366",
                         "whatsapp-green-hover": "#20ba59",
-                        "surface": "#fcf9f8",
-                        "surface-gray": "#F8F9FA",
-                        "surface-dim": "#dcd9d9",
-                        "surface-container": "#f0eded",
-                        "surface-container-high": "#eae7e7",
-                        "surface-container-highest": "#e5e2e1",
-                        "surface-container-lowest": "#ffffff",
-                        "on-surface": "#1b1c1c",
-                        "on-surface-variant": "#424751",
-                        "border-subtle": "#E5E7EB",
-                        "outline-variant": "#c2c6d3",
-                        "primary-fixed": "#d7e2ff",
-                        "primary-fixed-dim": "#abc7ff"
+                        "gold-accent": "#d97706",
+                        "surface": "#ffffff",
+                        "surface-gray": "#f8fafc",
+                        "surface-dim": "#f1f5f9",
+                        "on-surface": "#0f172a",
+                        "on-surface-variant": "#475569",
+                        "border-subtle": "#e2e8f0",
+                        "outline-variant": "#cbd5e1"
                     },
                     fontFamily: {
                         sans: ["Inter", "sans-serif"],
@@ -62,543 +65,726 @@
     </script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-[#fcf9f8] text-[#1b1c1c] font-sans antialiased selection:bg-primary-container selection:text-on-primary-container pb-20 md:pb-0">
+<body class="bg-[#fafafa] text-on-surface font-sans antialiased selection:bg-cendia-red selection:text-white pb-20 md:pb-0">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-secondary text-white py-2.5 px-4 text-xs font-medium border-b border-slate-800">
+        <div class="max-w-container-max mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-2 justify-center">
+                <span class="inline-flex items-center gap-1 bg-cendia-red text-white text-[10px] uppercase font-extrabold px-2 py-0.5 rounded-full tracking-wider">Oficial</span>
+                <span>Instituto avalado por <strong>SETEC</strong> · Centro Evaluador <strong>CAMBRIDGE & OXFORD</strong></span>
+            </div>
+            <div class="flex items-center gap-4 text-slate-300">
+                <a href="tel:022528551" class="hover:text-white transition-colors flex items-center gap-1">
+                    <span class="material-symbols-outlined text-sm">call</span> 022-528-551
+                </a>
+                <a href="https://wa.me/593998720970" target="_blank" class="hover:text-whatsapp-green transition-colors flex items-center gap-1 font-semibold">
+                    <span class="material-symbols-outlined text-sm text-whatsapp-green" style="font-variation-settings: 'FILL' 1;">chat</span> +593 99 872 0970
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- Sticky Header (TopNavBar) -->
-    <header class="bg-white/95 backdrop-blur-md fixed top-0 w-full z-40 border-b border-border-subtle shadow-sm transition-all duration-300" id="main-header">
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 w-full z-40 border-b border-border-subtle shadow-sm transition-all duration-300" id="main-header">
         <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-3.5">
             <!-- Brand Logo -->
-            <a class="flex items-center gap-3 font-display text-2xl font-bold text-primary hover:opacity-90 transition-opacity" href="#">
+            <a class="flex items-center gap-3 font-display text-2xl font-bold text-cendia-red hover:opacity-95 transition-opacity" href="#">
                 <div class="flex items-center gap-2.5">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white shadow-md">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cendia-red-light to-cendia-red-dark flex items-center justify-center text-white shadow-md shadow-red-900/20">
                         <span class="material-symbols-outlined text-2xl">school</span>
                     </div>
                     <div class="flex flex-col">
-                        <span class="font-display font-extrabold text-xl tracking-tight text-primary leading-none">CENDIA</span>
-                        <span class="text-[10px] font-semibold tracking-wider text-secondary uppercase leading-tight">Language Institute</span>
+                        <span class="font-display font-black text-2xl tracking-tight text-cendia-red leading-none">CENDIA</span>
+                        <span class="text-[9px] font-bold tracking-widest text-slate-700 uppercase leading-tight">Language Institute</span>
                     </div>
                 </div>
             </a>
 
             <!-- Desktop Navigation Links -->
-            <nav class="hidden lg:flex items-center gap-7">
-                <a class="font-medium text-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors py-2" href="#cursos">Cursos</a>
-                <a class="font-medium text-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors py-2" href="#metodo">Método</a>
-                <a class="font-medium text-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors py-2" href="#resultados">Resultados</a>
-                <a class="font-medium text-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors py-2" href="#precios">Precios</a>
-                <a class="font-medium text-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors py-2" href="#preguntas">Preguntas</a>
-                <a class="font-medium text-sm uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors py-2" href="#contacto">Contacto</a>
+            <nav class="hidden xl:flex items-center gap-6">
+                <a class="font-semibold text-xs uppercase tracking-wider text-slate-700 hover:text-cendia-red transition-colors py-2" href="#programa">Programa & Niveles</a>
+                <a class="font-semibold text-xs uppercase tracking-wider text-slate-700 hover:text-cendia-red transition-colors py-2" href="#horarios">Horarios</a>
+                <a class="font-semibold text-xs uppercase tracking-wider text-slate-700 hover:text-cendia-red transition-colors py-2" href="#certificaciones">Certificaciones</a>
+                <a class="font-semibold text-xs uppercase tracking-wider text-slate-700 hover:text-cendia-red transition-colors py-2" href="#costos">Costos</a>
+                <a class="font-semibold text-xs uppercase tracking-wider text-slate-700 hover:text-cendia-red transition-colors py-2" href="#ubicacion">Ubicación & Mapa</a>
+                <a class="font-semibold text-xs uppercase tracking-wider text-slate-700 hover:text-cendia-red transition-colors py-2" href="#contacto">Contacto</a>
             </nav>
 
             <!-- Actions -->
             <div class="flex items-center gap-3">
-                <a class="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-whatsapp-green hover:bg-emerald-50 px-4 py-2 rounded-full transition-colors border border-whatsapp-green" href="https://wa.me/593998720970" rel="noopener noreferrer" target="_blank">
-                    <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">chat</span>
+                <a class="hidden sm:inline-flex items-center gap-2 text-xs font-bold text-whatsapp-green hover:bg-emerald-50 px-3.5 py-2.5 rounded-full transition-all border border-whatsapp-green shadow-sm" href="https://wa.me/593998720970?text=Hola,%20quisiera%20información%20sobre%20los%20cursos%20de%20inglés%20en%20Cendia" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">chat</span>
                     WhatsApp
                 </a>
-                <a class="text-sm font-semibold bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-primary-container transition-all shadow-sm active:scale-95 text-center" href="#contacto">
-                    Prueba de nivel gratis
+                <a class="text-xs font-bold bg-cendia-red text-white px-4 sm:px-5 py-2.5 rounded-xl hover:bg-cendia-red-dark transition-all shadow-md shadow-red-900/20 active:scale-95 text-center flex items-center gap-1.5" href="#prueba-ubicacion">
+                    <span class="material-symbols-outlined text-base">fact_check</span>
+                    <span>Prueba de Ubicación ($20)</span>
                 </a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-28 md:pt-36 pb-16 md:pb-24 bg-surface-gray relative overflow-hidden">
+    <section class="pt-12 sm:pt-16 pb-16 md:pb-24 bg-gradient-to-b from-cendia-red-soft/40 via-white to-surface-gray relative overflow-hidden">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid lg:grid-cols-12 gap-12 items-center">
             
             <!-- Hero Left Content -->
             <div class="lg:col-span-6 z-10">
-                <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-secondary-container/60 text-on-secondary-container rounded-full text-xs font-semibold mb-6 border border-secondary-container shadow-sm">
-                    <span class="material-symbols-outlined text-[16px] text-secondary">school</span>
-                    <span>Academic Excellence in Quito</span>
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-cendia-red-soft border border-red-200 text-cendia-red rounded-full text-xs font-bold mb-6 shadow-sm">
+                    <span class="material-symbols-outlined text-[16px]">verified</span>
+                    <span>Instituto Avalado por SETEC & Centro Evaluador Cambridge</span>
                 </div>
-                <h1 class="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary mb-6 leading-tight text-balance">
-                    Habla inglés con confianza. Método 100% inmersivo desde el día uno.
+                
+                <h1 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-6 leading-[1.15] text-balance">
+                    Habla inglés con fluidez. <span class="text-cendia-red underline decoration-red-200 decoration-4">Método 100% inmersivo</span> y certificación oficial.
                 </h1>
-                <p class="text-base sm:text-lg text-on-surface-variant mb-8 max-w-xl leading-relaxed">
-                    Clases 100% en inglés, profesores certificados, preparación para exámenes internacionales y resultados comprobados.
+                
+                <p class="text-base sm:text-lg text-slate-600 mb-8 max-w-xl leading-relaxed">
+                    Programa de <strong>12 meses con 12 niveles</strong> (un nivel por mes) y <strong>2 horas académicas diarias</strong>. Prepárate y certifícate con aval <strong>SETEC de inglés avanzado</strong>, <strong>Cambridge FCE</strong> y <strong>Oxford</strong>.
                 </p>
+
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a class="inline-flex justify-center items-center gap-2.5 font-semibold text-sm bg-primary text-white px-6 py-4 rounded-xl hover:bg-primary-container transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:scale-95" href="#contacto">
-                        <span class="material-symbols-outlined text-xl">edit_note</span>
-                        <span>Reserva tu prueba de nivel gratis</span>
+                    <a class="inline-flex justify-center items-center gap-2.5 font-bold text-sm bg-cendia-red text-white px-6 py-4 rounded-xl hover:bg-cendia-red-dark transition-all shadow-lg shadow-red-900/25 hover:shadow-xl hover:-translate-y-0.5 active:scale-95" href="#prueba-ubicacion">
+                        <span class="material-symbols-outlined text-xl">fact_check</span>
+                        <span>Rinde tu Prueba de Ubicación ($20)</span>
                     </a>
-                    <a class="inline-flex justify-center items-center gap-2.5 font-semibold text-sm bg-whatsapp-green text-white px-6 py-4 rounded-xl hover:bg-whatsapp-green-hover transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:scale-95" href="https://wa.me/593998720970" target="_blank" rel="noopener noreferrer">
+                    <a class="inline-flex justify-center items-center gap-2.5 font-bold text-sm bg-whatsapp-green text-white px-6 py-4 rounded-xl hover:bg-whatsapp-green-hover transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:scale-95" href="https://wa.me/593998720970?text=Hola,%20deseo%20asesoría%20sobre%20el%20programa%20de%20inglés%20de%20Cendia" target="_blank" rel="noopener noreferrer">
                         <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">chat</span>
                         <span>Escríbenos por WhatsApp</span>
                     </a>
                 </div>
 
-                <!-- Trust indicators -->
-                <div class="mt-10 pt-8 border-t border-border-subtle grid grid-cols-3 gap-4 text-center sm:text-left">
-                    <div>
-                        <p class="font-display font-bold text-2xl text-primary">+15 Años</p>
-                        <p class="text-xs text-on-surface-variant font-medium">De experiencia</p>
+                <!-- Trust Badges Bar -->
+                <div class="mt-10 pt-8 border-t border-slate-200 grid grid-cols-3 gap-4 text-center sm:text-left">
+                    <div class="border-r border-slate-200 pr-2">
+                        <p class="font-display font-black text-xl sm:text-2xl text-cendia-red">12 Niveles</p>
+                        <p class="text-xs text-slate-600 font-semibold">1 nivel por mes</p>
+                    </div>
+                    <div class="border-r border-slate-200 pr-2">
+                        <p class="font-display font-black text-xl sm:text-2xl text-slate-900">SETEC</p>
+                        <p class="text-xs text-slate-600 font-semibold">Aval Nacional Oficial</p>
                     </div>
                     <div>
-                        <p class="font-display font-bold text-2xl text-primary">100%</p>
-                        <p class="text-xs text-on-surface-variant font-medium">Inmersión total</p>
-                    </div>
-                    <div>
-                        <p class="font-display font-bold text-2xl text-primary">Cambridge</p>
-                        <p class="text-xs text-on-surface-variant font-medium">Centro Oficial</p>
+                        <p class="font-display font-black text-xl sm:text-2xl text-slate-900">Cambridge</p>
+                        <p class="text-xs text-slate-600 font-semibold">Centro Evaluador</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Hero Right Image -->
+            <!-- Hero Right Image Card -->
             <div class="lg:col-span-6 relative z-10">
                 <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white group">
                     <img 
-                        alt="Instalaciones Cendia English Institute" 
-                        class="w-full h-[380px] sm:h-[480px] lg:h-[540px] object-cover transition-transform duration-700 group-hover:scale-105" 
+                        alt="Instalaciones CENDIA English Institute" 
+                        class="w-full h-[380px] sm:h-[480px] lg:h-[520px] object-cover transition-transform duration-700 group-hover:scale-105" 
                         src="https://lh3.googleusercontent.com/aida/AEtjO1UuNJi43lhINbZf7pnUnWDHPnomoacmlBWF2fKpINbOf5mwdI1XXkRQKUJ3_zmOTKDVMXPhD5H9SZo5d_HmKZN_oPw9yCrUVSHsTk2GlPD_3NXzB46aLqP4T2PFVnJp8x9uxpzQ-Hoc-lwihXcKKu3F528Aiyl8TKIHHQO70p-sLpqF3bCvOnaf7aZJcuCzp4qDEErV8UcRQi4lHXVhh5VnNIZiidqMoR3axkqfSMEE7IaeuWNeF_MZ9Q"
                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop';"
                     >
                     
-                    <!-- Floating Cambridge Badge -->
+                    <!-- Floating Cambridge & SETEC Badge -->
                     <div class="absolute bottom-6 left-6 right-6 sm:right-auto bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-border-subtle flex items-center gap-3.5 animate-bounce-slow">
-                        <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
-                            <span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        <div class="w-12 h-12 rounded-xl bg-cendia-red-soft border border-red-200 flex items-center justify-center text-cendia-red flex-shrink-0">
+                            <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">verified</span>
                         </div>
                         <div>
-                            <p class="font-display font-bold text-sm text-primary leading-tight">Certificado Cambridge</p>
-                            <p class="text-xs text-on-surface-variant font-medium">Centro Preparador Oficial</p>
+                            <p class="font-display font-bold text-sm text-slate-900 leading-tight">Centro Evaluador Oficial</p>
+                            <p class="text-xs text-cendia-red font-bold">Cambridge FCE · SETEC · Oxford</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Decorative subtle background shape -->
-        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary-fixed-dim/20 to-transparent -skew-x-12 translate-x-1/4 rounded-3xl -z-0 pointer-events-none"></div>
+        <!-- Decorative subtle background gradient -->
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-red-100/40 to-transparent -skew-x-12 translate-x-1/4 rounded-3xl -z-0 pointer-events-none"></div>
     </section>
 
-    <!-- Urgency Bar -->
-    <div class="bg-primary text-white py-3.5 px-4 text-center border-b border-primary-container shadow-inner sticky top-[65px] md:top-[69px] z-30">
-        <div class="max-w-container-max mx-auto flex items-center justify-center gap-2 flex-wrap text-xs sm:text-sm font-semibold tracking-wide">
-            <span class="material-symbols-outlined text-amber-300 text-lg animate-pulse">rocket_launch</span>
-            <span>Inicio de clases: Lunes a Viernes – 4 de junio 2026; Sábados – 6 de junio 2026.</span>
-            <span class="bg-amber-400 text-primary px-2.5 py-0.5 rounded-full text-[11px] font-extrabold uppercase">¡Cupos limitados!</span>
-        </div>
-    </div>
-
-    <!-- Courses Section -->
-    <section class="py-16 md:py-24 bg-white" id="cursos">
+    <!-- SECTION 1: PROGRAMA & NIVELES -->
+    <section class="py-16 md:py-24 bg-white" id="programa">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-xs font-bold text-secondary uppercase tracking-widest bg-secondary-container/50 px-3 py-1 rounded-full">Programas Académicos</span>
-                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mt-3 mb-4">Cursos diseñados para tus metas</h2>
-                <p class="text-on-surface-variant text-base">Aprende con metodologías interactivas y certificaciones con reconocimiento global.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Course 1 -->
-                <div class="bg-surface-gray rounded-2xl p-6 border border-border-subtle hover:border-primary/40 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined text-2xl">record_voice_over</span>
-                        </div>
-                        <h3 class="font-display font-bold text-xl text-primary mb-2">Inglés General</h3>
-                        <p class="text-sm text-on-surface-variant leading-relaxed mb-4">Aprende a comunicarte con fluidez desde el nivel inicial hasta avanzado con inmersión total.</p>
-                        <ul class="space-y-2 text-xs text-on-surface font-medium mb-6">
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Niveles A1 hasta C1</li>
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Grupos reducidos</li>
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Club de conversación</li>
-                        </ul>
-                    </div>
-                    <a href="#contacto" class="w-full text-center py-2.5 px-4 rounded-lg bg-primary/10 text-primary font-semibold text-xs hover:bg-primary hover:text-white transition-colors">Más Información</a>
-                </div>
-
-                <!-- Course 2 -->
-                <div class="bg-surface-gray rounded-2xl p-6 border-2 border-primary shadow-md relative flex flex-col justify-between group">
-                    <div class="absolute -top-3 right-4 bg-primary text-white text-[10px] font-extrabold uppercase px-3 py-0.5 rounded-full tracking-wider">Popular</div>
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined text-2xl">workspace_premium</span>
-                        </div>
-                        <h3 class="font-display font-bold text-xl text-primary mb-2">Examen Aptis & Cambridge</h3>
-                        <p class="text-sm text-on-surface-variant leading-relaxed mb-4">Preparación intensiva y simulacros reales para aprobar certificaciones internacionales.</p>
-                        <ul class="space-y-2 text-xs text-on-surface font-medium mb-6">
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Simulacros oficiales</li>
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Técnicas de examen</li>
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Alto porcentaje de aprobación</li>
-                        </ul>
-                    </div>
-                    <a href="#contacto" class="w-full text-center py-2.5 px-4 rounded-lg bg-primary text-white font-semibold text-xs hover:bg-primary-container transition-colors shadow-sm">Reservar Cupo</a>
-                </div>
-
-                <!-- Course 3 -->
-                <div class="bg-surface-gray rounded-2xl p-6 border border-border-subtle hover:border-primary/40 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-secondary text-white flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined text-2xl">person</span>
-                        </div>
-                        <h3 class="font-display font-bold text-xl text-primary mb-2">Clases 1 a 1</h3>
-                        <p class="text-sm text-on-surface-variant leading-relaxed mb-4">Tutoría personalizada a tu propio ritmo, enfocada en tus objetivos profesionales o académicos.</p>
-                        <ul class="space-y-2 text-xs text-on-surface font-medium mb-6">
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Horarios flexibles</li>
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Plan a la medida</li>
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Presencial u Online</li>
-                        </ul>
-                    </div>
-                    <a href="#contacto" class="w-full text-center py-2.5 px-4 rounded-lg bg-primary/10 text-primary font-semibold text-xs hover:bg-primary hover:text-white transition-colors">Más Información</a>
-                </div>
-
-                <!-- Course 4 -->
-                <div class="bg-surface-gray rounded-2xl p-6 border border-border-subtle hover:border-primary/40 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-slate-800 text-white flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined text-2xl">apartment</span>
-                        </div>
-                        <h3 class="font-display font-bold text-xl text-primary mb-2">Inglés Corporativo</h3>
-                        <p class="text-sm text-on-surface-variant leading-relaxed mb-4">Capacitación corporativa para equipos y empresas que buscan expandirse globalmente.</p>
-                        <ul class="space-y-2 text-xs text-on-surface font-medium mb-6">
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Reportes de progreso</li>
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> Facturación empresarial</li>
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span> In-company o virtual</li>
-                        </ul>
-                    </div>
-                    <a href="#contacto" class="w-full text-center py-2.5 px-4 rounded-lg bg-primary/10 text-primary font-semibold text-xs hover:bg-primary hover:text-white transition-colors">Cotizar Empresa</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Methodology & Results Section -->
-    <section class="py-16 md:py-24 bg-surface-gray border-y border-border-subtle" id="metodo">
-        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <span class="text-xs font-bold text-secondary uppercase tracking-widest bg-secondary-container/50 px-3 py-1 rounded-full">Nuestro Método</span>
-                    <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mt-3 mb-6">¿Por qué estudiar en Cendia?</h2>
-                    
-                    <div class="space-y-6">
-                        <div class="flex gap-4 items-start">
-                            <div class="w-10 h-10 rounded-xl bg-primary text-white flex items-center justify-center flex-shrink-0 mt-1">
-                                <span class="material-symbols-outlined">forum</span>
-                            </div>
-                            <div>
-                                <h4 class="font-display font-bold text-lg text-primary">Inmersión 100% Práctica</h4>
-                                <p class="text-sm text-on-surface-variant">Desde el primer día practicas comunicación real. Olvídate de traducir mentalmente: aprende a pensar y expresarte naturalmente en inglés.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex gap-4 items-start">
-                            <div class="w-10 h-10 rounded-xl bg-secondary text-white flex items-center justify-center flex-shrink-0 mt-1">
-                                <span class="material-symbols-outlined">badge</span>
-                            </div>
-                            <div>
-                                <h4 class="font-display font-bold text-lg text-primary">Docentes Internacionales Certificados</h4>
-                                <p class="text-sm text-on-surface-variant">Profesores titulados con certificaciones CELTA, TKT y amplia trayectoria pedagógica en la enseñanza del idioma inglés.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex gap-4 items-start">
-                            <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center flex-shrink-0 mt-1">
-                                <span class="material-symbols-outlined">timer</span>
-                            </div>
-                            <div>
-                                <h4 class="font-display font-bold text-lg text-primary">Flexibilidad Presencial y Online</h4>
-                                <p class="text-sm text-on-surface-variant">Elige estudiar en nuestras cómodas instalaciones en La Mariscal / Calderón o conéctate en vivo desde tu casa u oficina.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonials / Results in Quito -->
-                <div class="bg-white rounded-3xl p-8 border border-border-subtle shadow-xl space-y-6" id="resultados">
-                    <div class="flex items-center justify-between border-b border-border-subtle pb-4">
-                        <h3 class="font-display font-bold text-xl text-primary">Testimonios Reales</h3>
-                        <div class="flex text-amber-400">
-                            <span class="material-symbols-outlined text-sm">star</span>
-                            <span class="material-symbols-outlined text-sm">star</span>
-                            <span class="material-symbols-outlined text-sm">star</span>
-                            <span class="material-symbols-outlined text-sm">star</span>
-                            <span class="material-symbols-outlined text-sm">star</span>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 1 -->
-                    <div class="p-4 rounded-xl bg-surface-gray border border-border-subtle">
-                        <p class="text-sm text-on-surface italic mb-3">"Cendia me preparó para el examen Aptis y obtuve mi nivel C1 requerido para mi maestría en menos de 4 meses. Las clases conversacionales marcan la diferencia."</p>
-                        <div class="flex items-center gap-3">
-                            <div class="w-9 h-9 rounded-full bg-primary/20 text-primary font-bold flex items-center justify-center text-xs">MA</div>
-                            <div>
-                                <p class="font-bold text-xs text-primary">Mateo Andrade</p>
-                                <p class="text-[11px] text-on-surface-variant">Ingeniero de Software - Quito</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 2 -->
-                    <div class="p-4 rounded-xl bg-surface-gray border border-border-subtle">
-                        <p class="text-sm text-on-surface italic mb-3">"El ambiente de aprendizaje es excelente y los profesores tienen muchísima paciencia. Perdí el miedo a hablar en público en inglés."</p>
-                        <div class="flex items-center gap-3">
-                            <div class="w-9 h-9 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center text-xs">SV</div>
-                            <div>
-                                <p class="font-bold text-xs text-primary">Sofia Villacís</p>
-                                <p class="text-[11px] text-on-surface-variant">Estudiante de Medicina</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing / Plans Section -->
-    <section class="py-16 md:py-24 bg-white" id="precios">
-        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-xs font-bold text-secondary uppercase tracking-widest bg-secondary-container/50 px-3 py-1 rounded-full">Planes y Horarios</span>
-                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mt-3 mb-4">Invierte en tu futuro</h2>
-                <p class="text-on-surface-variant text-base">Opciones convenientes con facilidades de pago y horarios adaptables.</p>
+                <span class="text-xs font-bold text-cendia-red uppercase tracking-widest bg-cendia-red-soft px-3.5 py-1.5 rounded-full border border-red-200">Estructura Académica</span>
+                <h2 class="font-display text-3xl md:text-4xl font-extrabold text-slate-900 mt-3 mb-4">Programa de 12 Meses con 12 Niveles</h2>
+                <p class="text-slate-600 text-base">Un nivel por mes, con clases de 2 horas académicas diarias para garantizar tu fluidez y dominio del idioma.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Plan 1 -->
-                <div class="bg-surface-gray rounded-3xl p-8 border border-border-subtle flex flex-col justify-between">
+                <!-- Card 1: Regular de Lunes a Viernes -->
+                <div class="bg-surface-gray rounded-3xl p-8 border border-border-subtle hover:border-cendia-red/40 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
                     <div>
-                        <h3 class="font-display font-bold text-xl text-primary mb-2">Lunes a Viernes</h3>
-                        <p class="text-xs text-on-surface-variant mb-4">Intensivo diario para un progreso acelerado</p>
-                        <div class="my-6">
-                            <span class="text-3xl font-display font-extrabold text-primary">2 hrs</span>
-                            <span class="text-xs text-on-surface-variant"> / día (10 hrs/semana)</span>
+                        <div class="w-12 h-12 rounded-2xl bg-cendia-red text-white flex items-center justify-center mb-6 shadow-md shadow-red-900/20 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-2xl">calendar_month</span>
                         </div>
-                        <ul class="space-y-3 text-xs text-on-surface mb-8">
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">schedule</span> Horarios mañana, tarde y noche</li>
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">menu_book</span> Material digital incluido</li>
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">quiz</span> Prueba diagnóstica sin costo</li>
-                        </ul>
-                    </div>
-                    <a href="#contacto" class="block w-full text-center py-3 rounded-xl bg-primary/10 text-primary font-semibold text-sm hover:bg-primary hover:text-white transition-colors">Consultar Tarifa</a>
-                </div>
-
-                <!-- Plan 2 (Destacado) -->
-                <div class="bg-surface-gray rounded-3xl p-8 border-2 border-primary shadow-xl relative flex flex-col justify-between">
-                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold uppercase px-4 py-1 rounded-full tracking-wider">
-                        Más Elegido
-                    </div>
-                    <div>
-                        <h3 class="font-display font-bold text-xl text-primary mb-2">Sábados Intensivos</h3>
-                        <p class="text-xs text-on-surface-variant mb-4">Ideal para profesionales y universitarios</p>
-                        <div class="my-6">
-                            <span class="text-3xl font-display font-extrabold text-primary">5 hrs</span>
-                            <span class="text-xs text-on-surface-variant"> / sábado (8:00 a 13:00)</span>
-                        </div>
-                        <ul class="space-y-3 text-xs text-on-surface mb-8">
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">schedule</span> Un solo día a la semana</li>
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">forum</span> Práctica intensiva de speaking</li>
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">workspace_premium</span> Certificado por módulo</li>
-                        </ul>
-                    </div>
-                    <a href="#contacto" class="block w-full text-center py-3 rounded-xl bg-primary text-white font-semibold text-sm hover:bg-primary-container transition-colors shadow-md">Inscribirme Ahora</a>
-                </div>
-
-                <!-- Plan 3 -->
-                <div class="bg-surface-gray rounded-3xl p-8 border border-border-subtle flex flex-col justify-between">
-                    <div>
-                        <h3 class="font-display font-bold text-xl text-primary mb-2">Online en Vivo</h3>
-                        <p class="text-xs text-on-surface-variant mb-4">Aprende desde cualquier lugar con docente en tiempo real</p>
-                        <div class="my-6">
-                            <span class="text-3xl font-display font-extrabold text-primary">100%</span>
-                            <span class="text-xs text-on-surface-variant"> Interactivo en Zoom HD</span>
-                        </div>
-                        <ul class="space-y-3 text-xs text-on-surface mb-8">
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">devices</span> Plataforma 24/7 de ejercicios</li>
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">video_call</span> Clases grabadas de respaldo</li>
-                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-600 text-sm">support_agent</span> Asesoría académica continua</li>
-                        </ul>
-                    </div>
-                    <a href="#contacto" class="block w-full text-center py-3 rounded-xl bg-primary/10 text-primary font-semibold text-sm hover:bg-primary hover:text-white transition-colors">Consultar Tarifa</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="py-16 md:py-24 bg-surface-gray border-t border-border-subtle" id="preguntas">
-        <div class="max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop">
-            <div class="text-center mb-12">
-                <span class="text-xs font-bold text-secondary uppercase tracking-widest bg-secondary-container/50 px-3 py-1 rounded-full">Dudas Frecuentes</span>
-                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mt-3 mb-4">Preguntas Frecuentes</h2>
-            </div>
-
-            <div class="space-y-4" id="faq-accordion">
-                <!-- FAQ 1 -->
-                <details class="bg-white rounded-xl border border-border-subtle p-5 group transition-all" open>
-                    <summary class="font-display font-semibold text-primary cursor-pointer flex justify-between items-center list-none select-none">
-                        <span>¿Cómo funciona la prueba de nivel gratis?</span>
-                        <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
-                    </summary>
-                    <p class="mt-3 text-sm text-on-surface-variant leading-relaxed">
-                        Es una evaluación diagnóstica de 20 a 30 minutos (escrita y oral) guiada por un asesor académico. Te permite conocer tu nivel exacto en el Marco Común Europeo (A1, A2, B1, B2, C1) y recomendarte el curso idóneo sin costo ni compromiso.
-                    </p>
-                </details>
-
-                <!-- FAQ 2 -->
-                <details class="bg-white rounded-xl border border-border-subtle p-5 group transition-all">
-                    <summary class="font-display font-semibold text-primary cursor-pointer flex justify-between items-center list-none select-none">
-                        <span>¿Tienen facilidades de pago o descuentos?</span>
-                        <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
-                    </summary>
-                    <p class="mt-3 text-sm text-on-surface-variant leading-relaxed">
-                        Sí, contamos con pago en cuotas mensuales, descuentos por pronto pago o inscripción grupal/familiar, y aceptamos tarjetas de crédito con meses sin intereses.
-                    </p>
-                </details>
-
-                <!-- FAQ 3 -->
-                <details class="bg-white rounded-xl border border-border-subtle p-5 group transition-all">
-                    <summary class="font-display font-semibold text-primary cursor-pointer flex justify-between items-center list-none select-none">
-                        <span>¿Dónde están ubicadas las sedes en Quito?</span>
-                        <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
-                    </summary>
-                    <p class="mt-3 text-sm text-on-surface-variant leading-relaxed">
-                        Nuestra sede principal está en La Mariscal (Baquerizo Moreno E8-26 y Almagro, Quito Norte) y disponemos también de sede en Calderón, además de nuestros cursos 100% online en vivo.
-                    </p>
-                </details>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section class="py-16 md:py-24 bg-white relative overflow-hidden" id="contacto">
-        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid lg:grid-cols-12 gap-12 items-center">
-            
-            <!-- Contact Left Info -->
-            <div class="lg:col-span-5">
-                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-primary mb-4 leading-tight">
-                    ¿Listo para hablar inglés? ✨
-                </h2>
-                <p class="text-base text-on-surface-variant mb-8 leading-relaxed">
-                    Déjanos tus datos y nos pondremos en contacto contigo para programar tu prueba de nivel sin costo.
-                </p>
-
-                <div class="bg-surface-gray p-6 rounded-2xl border border-border-subtle space-y-5 shadow-sm">
-                    <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
-                            <span class="material-symbols-outlined text-xl">location_on</span>
-                        </div>
-                        <div>
-                            <h4 class="font-display font-bold text-sm text-primary">La Mariscal – Quito Norte</h4>
-                            <p class="text-xs sm:text-sm text-on-surface-variant">Baquerizo Moreno E8-26 y Almagro</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
-                            <span class="material-symbols-outlined text-xl">call</span>
-                        </div>
-                        <div>
-                            <h4 class="font-display font-bold text-sm text-primary">Teléfono</h4>
-                            <a href="tel:022528551" class="text-xs sm:text-sm text-on-surface-variant hover:text-primary transition-colors">022-528-551</a>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-whatsapp-green flex-shrink-0">
-                            <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">chat</span>
-                        </div>
-                        <div>
-                            <h4 class="font-display font-bold text-sm text-primary">WhatsApp</h4>
-                            <a href="https://wa.me/593998720970" target="_blank" class="text-xs sm:text-sm text-on-surface-variant hover:text-whatsapp-green transition-colors font-medium">+593 99 872 0970</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact Form Card -->
-            <div class="lg:col-span-7">
-                <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-[0px_10px_40px_rgba(0,0,0,0.06)] border border-border-subtle">
-                    <form id="level-test-form" class="space-y-4" onsubmit="handleFormSubmit(event)">
+                        <h3 class="font-display font-bold text-xl text-slate-900 mb-2">Programa Regular (12 Meses)</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">Avanzas un nivel por mes de forma intensiva con 2 horas académicas diarias de lunes a viernes.</p>
                         
+                        <div class="space-y-3 border-t border-slate-200 pt-4 mb-6">
+                            <div class="flex items-start gap-2.5 text-xs text-slate-700 font-medium">
+                                <span class="material-symbols-outlined text-cendia-red text-base">check_circle</span>
+                                <span><strong>12 Niveles Progresivos:</strong> Desde inicial hasta avanzado</span>
+                            </div>
+                            <div class="flex items-start gap-2.5 text-xs text-slate-700 font-medium">
+                                <span class="material-symbols-outlined text-cendia-red text-base">check_circle</span>
+                                <span><strong>2 horas académicas diarias:</strong> Práctica conversacional real</span>
+                            </div>
+                            <div class="flex items-start gap-2.5 text-xs text-slate-700 font-medium">
+                                <span class="material-symbols-outlined text-cendia-red text-base">check_circle</span>
+                                <span><strong>Modalidades:</strong> Presencial u Online en vivo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#horarios" class="w-full text-center py-3 rounded-xl bg-slate-900 text-white font-bold text-xs hover:bg-cendia-red transition-colors shadow-sm">Ver Horarios Lunes a Viernes</a>
+                </div>
+
+                <!-- Card 2: Programa Sabatino (15 Meses) -->
+                <div class="bg-gradient-to-b from-white to-cendia-red-soft/30 rounded-3xl p-8 border-2 border-cendia-red shadow-xl relative flex flex-col justify-between group">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-cendia-red text-white text-[11px] font-extrabold uppercase px-4 py-1 rounded-full tracking-wider shadow-md">
+                        Modalidad Sábados
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-cendia-red text-white flex items-center justify-center mb-6 shadow-md shadow-red-900/20 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-2xl">weekend</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-slate-900 mb-2">Programa Sábados (15 Meses)</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">Diseñado para profesionales y universitarios que estudian o trabajan entre semana.</p>
+                        
+                        <div class="space-y-3 border-t border-slate-200 pt-4 mb-6">
+                            <div class="flex items-start gap-2.5 text-xs text-slate-700 font-medium">
+                                <span class="material-symbols-outlined text-cendia-red text-base">check_circle</span>
+                                <span><strong>Horario intensivo:</strong> Sábados de 8:00 am a 1:00 pm (5 horas)</span>
+                            </div>
+                            <div class="flex items-start gap-2.5 text-xs text-slate-700 font-medium">
+                                <span class="material-symbols-outlined text-cendia-red text-base">check_circle</span>
+                                <span><strong>15 Meses de duración:</strong> Cobertura total de los 12 niveles</span>
+                            </div>
+                            <div class="flex items-start gap-2.5 text-xs text-slate-700 font-medium">
+                                <span class="material-symbols-outlined text-cendia-red text-base">check_circle</span>
+                                <span><strong>Enfoque dinámico:</strong> Talleres prácticos y speaking</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#costos" class="w-full text-center py-3 rounded-xl bg-cendia-red text-white font-bold text-xs hover:bg-cendia-red-dark transition-colors shadow-md shadow-red-900/20">Consultar Inversión Sabatina</a>
+                </div>
+
+                <!-- Card 3: Avales y Exámenes Internacionales -->
+                <div class="bg-surface-gray rounded-3xl p-8 border border-border-subtle hover:border-cendia-red/40 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-slate-900 text-white flex items-center justify-center mb-6 shadow-md group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-2xl">workspace_premium</span>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-slate-900 mb-2">Certificación & Exámenes</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">Preparación rigurosa y evaluación directa para títulos con validez nacional e internacional.</p>
+                        
+                        <div class="space-y-3 border-t border-slate-200 pt-4 mb-6">
+                            <div class="flex items-start gap-2.5 text-xs text-slate-700 font-medium">
+                                <span class="material-symbols-outlined text-cendia-red text-base">check_circle</span>
+                                <span><strong>Certificado SETEC:</strong> Inglés avanzado avalado en Ecuador</span>
+                            </div>
+                            <div class="flex items-start gap-2.5 text-xs text-slate-700 font-medium">
+                                <span class="material-symbols-outlined text-cendia-red text-base">check_circle</span>
+                                <span><strong>Centro Evaluador Cambridge:</strong> Exámenes Cambridge FCE</span>
+                            </div>
+                            <div class="flex items-start gap-2.5 text-xs text-slate-700 font-medium">
+                                <span class="material-symbols-outlined text-cendia-red text-base">check_circle</span>
+                                <span><strong>Certificaciones Oxford</strong> y exámenes internacionales</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#certificaciones" class="w-full text-center py-3 rounded-xl bg-slate-900 text-white font-bold text-xs hover:bg-cendia-red transition-colors shadow-sm">Ver Detalles de Certificación</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: HORARIOS Y MODALIDADES -->
+    <section class="py-16 md:py-24 bg-surface-gray border-y border-border-subtle" id="horarios">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold text-cendia-red uppercase tracking-widest bg-cendia-red-soft px-3.5 py-1.5 rounded-full border border-red-200">Flexibilidad Total</span>
+                <h2 class="font-display text-3xl md:text-4xl font-extrabold text-slate-900 mt-3 mb-4">Horarios Presenciales y Online</h2>
+                <p class="text-slate-600 text-base">Elige el horario que mejor se adapte a tu rutina diaria en nuestras oficinas de La Mariscal o en modalidad virtual.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Horarios Presenciales -->
+                <div class="bg-white rounded-3xl p-8 border border-border-subtle shadow-md">
+                    <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
+                        <div class="w-10 h-10 rounded-xl bg-cendia-red text-white flex items-center justify-center">
+                            <span class="material-symbols-outlined">apartment</span>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-xl text-slate-900">1. Horarios Presenciales</h3>
+                            <p class="text-xs text-slate-500 font-medium">Sede La Mariscal (Baquerizo Moreno E8-26 y Almagro)</p>
+                        </div>
+                    </div>
+
+                    <!-- Lunes a Viernes Presencial -->
+                    <div class="mb-6">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-cendia-red mb-3 flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-sm">schedule</span> De Lunes a Viernes (2 hrs diarias):
+                        </h4>
+                        <div class="grid sm:grid-cols-3 gap-3">
+                            <div class="p-4 rounded-2xl bg-surface-gray border border-slate-200 text-center hover:border-cendia-red transition-all">
+                                <p class="text-[11px] text-slate-500 font-semibold mb-1">Mañana Temprano</p>
+                                <p class="font-display font-black text-slate-900 text-base">7:00 am</p>
+                                <p class="text-xs text-slate-600 font-medium">a 8:40 am</p>
+                            </div>
+                            <div class="p-4 rounded-2xl bg-surface-gray border border-slate-200 text-center hover:border-cendia-red transition-all">
+                                <p class="text-[11px] text-slate-500 font-semibold mb-1">Mañana Media</p>
+                                <p class="font-display font-black text-slate-900 text-base">9:00 am</p>
+                                <p class="text-xs text-slate-600 font-medium">a 10:50 am</p>
+                            </div>
+                            <div class="p-4 rounded-2xl bg-surface-gray border border-slate-200 text-center hover:border-cendia-red transition-all">
+                                <p class="text-[11px] text-slate-500 font-semibold mb-1">Tarde</p>
+                                <p class="font-display font-black text-slate-900 text-base">3:00 pm</p>
+                                <p class="text-xs text-slate-600 font-medium">a 4:50 pm</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sábados Presencial -->
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-800 mb-3 flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-sm">weekend</span> Sábados Intensivos:
+                        </h4>
+                        <div class="p-4 rounded-2xl bg-cendia-red-soft/40 border border-red-200 flex items-center justify-between">
+                            <div>
+                                <p class="font-display font-black text-slate-900 text-lg">8:00 am a 1:00 pm</p>
+                                <p class="text-xs text-slate-600">5 horas académicas continuas cada sábado</p>
+                            </div>
+                            <span class="bg-cendia-red text-white text-xs font-bold px-3 py-1 rounded-full">15 meses</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Horarios Online -->
+                <div class="bg-white rounded-3xl p-8 border border-border-subtle shadow-md flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
+                            <div class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center">
+                                <span class="material-symbols-outlined">laptop_mac</span>
+                            </div>
+                            <div>
+                                <h3 class="font-display font-bold text-xl text-slate-900">2. Horarios Online en Vivo</h3>
+                                <p class="text-xs text-slate-500 font-medium">Clases sincrónicas en tiempo real con docentes certificados</p>
+                            </div>
+                        </div>
+
+                        <!-- Lunes a Viernes Online -->
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-cendia-red mb-3 flex items-center gap-1.5">
+                                <span class="material-symbols-outlined text-sm">schedule</span> De Lunes a Viernes (Horario Nocturno):
+                            </h4>
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div class="p-5 rounded-2xl bg-surface-gray border border-slate-200 hover:border-cendia-red transition-all">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="text-xs font-bold text-cendia-red bg-red-50 px-2 py-0.5 rounded">Turno Tarde/Noche</span>
+                                        <span class="material-symbols-outlined text-slate-400 text-base">video_camera_front</span>
+                                    </div>
+                                    <p class="font-display font-black text-slate-900 text-xl">5:00 pm – 6:50 pm</p>
+                                    <p class="text-xs text-slate-600 mt-1">2 horas académicas diarias en vivo</p>
+                                </div>
+                                <div class="p-5 rounded-2xl bg-surface-gray border border-slate-200 hover:border-cendia-red transition-all">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="text-xs font-bold text-cendia-red bg-red-50 px-2 py-0.5 rounded">Turno Noche</span>
+                                        <span class="material-symbols-outlined text-slate-400 text-base">video_camera_front</span>
+                                    </div>
+                                    <p class="font-display font-black text-slate-900 text-xl">7:00 pm – 8:40 pm</p>
+                                    <p class="text-xs text-slate-600 mt-1">Ideal para después de tu jornada laboral</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-600">
+                            <p class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-cendia-red text-base">info</span>
+                                <span>Todos los cursos online incluyen acceso a plataforma digital 24/7 y grabaciones de clase.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <a href="#contacto" class="text-xs font-bold text-cendia-red hover:underline flex items-center gap-1">
+                            <span>¿Dudas sobre el horario? Consúltanos</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                        <a href="https://wa.me/593998720970" target="_blank" class="text-xs font-bold text-whatsapp-green hover:underline">
+                            Escribir al WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: CERTIFICACIONES Y AVALES OFICIALES -->
+    <section class="py-16 md:py-24 bg-white" id="certificaciones">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold text-cendia-red uppercase tracking-widest bg-cendia-red-soft px-3.5 py-1.5 rounded-full border border-red-200">Reconocimiento & Validez</span>
+                <h2 class="font-display text-3xl md:text-4xl font-extrabold text-slate-900 mt-3 mb-4">Avales y Certificaciones Oficiales</h2>
+                <p class="text-slate-600 text-base">CENDIA es un instituto avalado por SETEC y Centro Evaluador Oficial de exámenes Cambridge y Oxford.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Cert 1: SETEC -->
+                <div class="bg-surface-gray rounded-3xl p-8 border border-border-subtle hover:border-cendia-red transition-all shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-cendia-red-soft border border-red-200 text-cendia-red flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-3xl">verified</span>
+                        </div>
+                        <div class="inline-block bg-red-100 text-cendia-red text-[11px] font-extrabold px-3 py-0.5 rounded-full mb-2">Aval Nacional</div>
+                        <h3 class="font-display font-black text-2xl text-slate-900 mb-3">Certificado SETEC</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            CENDIA es un instituto <strong>avalado por SETEC</strong>. Al culminar el programa obtienes un <strong>Certificado Nacional de Inglés Avanzado</strong> reconocido oficialmente en el Ecuador.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-200 pt-4 text-xs font-semibold text-slate-700 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-cendia-red">check</span>
+                        <span>Válido para concursos y méritos laborales</span>
+                    </div>
+                </div>
+
+                <!-- Cert 2: Cambridge -->
+                <div class="bg-gradient-to-b from-white to-slate-50 rounded-3xl p-8 border-2 border-slate-900 transition-all shadow-lg flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-slate-900 text-white flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-3xl">workspace_premium</span>
+                        </div>
+                        <div class="inline-block bg-slate-900 text-white text-[11px] font-extrabold px-3 py-0.5 rounded-full mb-2">Evaluador Oficial</div>
+                        <h3 class="font-display font-black text-2xl text-slate-900 mb-3">Cambridge FCE</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            Somos <strong>CENTRO EVALUADOR</strong> de exámenes <strong>CAMBRIDGE</strong>. Te preparamos y evaluamos directamente para rendir el <em>Cambridge B2 First (FCE)</em> y certificados internacionales.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-200 pt-4 text-xs font-semibold text-slate-700 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-cendia-red">check</span>
+                        <span>Reconocimiento en más de 150 países</span>
+                    </div>
+                </div>
+
+                <!-- Cert 3: Oxford & Exámenes Internacionales -->
+                <div class="bg-surface-gray rounded-3xl p-8 border border-border-subtle hover:border-cendia-red transition-all shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-cendia-red-soft border border-red-200 text-cendia-red flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-3xl">public</span>
+                        </div>
+                        <div class="inline-block bg-red-100 text-cendia-red text-[11px] font-extrabold px-3 py-0.5 rounded-full mb-2">Estándar Global</div>
+                        <h3 class="font-display font-black text-2xl text-slate-900 mb-3">OXFORD & Otros</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            Certificaciones <strong>OXFORD</strong> y preparación especializada para cualquier otro certificado internacional que requieras para becas, maestrías o visados.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-200 pt-4 text-xs font-semibold text-slate-700 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-cendia-red">check</span>
+                        <span>Simulacros y técnicas de aprobación</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: COSTOS Y TARIFAS TRANSPARENTES -->
+    <section class="py-16 md:py-24 bg-surface-gray border-t border-border-subtle" id="costos">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold text-cendia-red uppercase tracking-widest bg-cendia-red-soft px-3.5 py-1.5 rounded-full border border-red-200">Tarifas Transparentes</span>
+                <h2 class="font-display text-3xl md:text-4xl font-extrabold text-slate-900 mt-3 mb-4">Inversión y Costos del Programa</h2>
+                <p class="text-slate-600 text-base">Precios claros sin cobros ocultos para tu formación profesional en inglés.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Tarifa 1: Niveles 1 al 8 -->
+                <div class="bg-white rounded-3xl p-8 border border-border-subtle shadow-md flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">Niveles Iniciales & Intermedios</span>
+                        <h3 class="font-display font-bold text-xl text-slate-900 mb-4">Nivel 1 al Nivel 8</h3>
+                        
+                        <div class="my-6 pb-6 border-b border-slate-100">
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-4xl sm:text-5xl font-display font-black text-cendia-red">USD $90</span>
+                                <span class="text-xs text-slate-500 font-bold">/ mes</span>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-1">Un nivel por mes · 2 horas diarias</p>
+                        </div>
+
+                        <ul class="space-y-3 text-xs text-slate-700 font-medium mb-8">
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-cendia-red text-sm">check_circle</span> Clases de 2 horas académicas diarias</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-cendia-red text-sm">check_circle</span> Presencial u Online en vivo</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-cendia-red text-sm">check_circle</span> Evaluación continua de speaking</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" class="block w-full text-center py-3.5 rounded-xl bg-slate-900 text-white font-bold text-xs hover:bg-cendia-red transition-colors shadow-sm">Inscribirme a Niveles 1-8</a>
+                </div>
+
+                <!-- Tarifa 2: Niveles 9 al 12 (Destacado) -->
+                <div class="bg-gradient-to-b from-white to-cendia-red-soft/30 rounded-3xl p-8 border-2 border-cendia-red shadow-xl relative flex flex-col justify-between">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-cendia-red text-white text-[11px] font-extrabold uppercase px-4 py-1 rounded-full tracking-wider shadow-md">
+                        Nivel Avanzado
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-cendia-red uppercase tracking-wider block mb-1">Avanzado & Certificación</span>
+                        <h3 class="font-display font-bold text-xl text-slate-900 mb-4">Nivel 9 al Nivel 12</h3>
+                        
+                        <div class="my-6 pb-6 border-b border-red-100">
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-4xl sm:text-5xl font-display font-black text-cendia-red">USD $100</span>
+                                <span class="text-xs text-slate-500 font-bold">/ mes</span>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-1">Preparación Cambridge FCE & SETEC</p>
+                        </div>
+
+                        <ul class="space-y-3 text-xs text-slate-700 font-medium mb-8">
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-cendia-red text-sm">check_circle</span> Perfeccionamiento C1 / Avanzado</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-cendia-red text-sm">check_circle</span> Simulacros de exámenes Cambridge</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-cendia-red text-sm">check_circle</span> Opción a título nacional SETEC</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" class="block w-full text-center py-3.5 rounded-xl bg-cendia-red text-white font-bold text-xs hover:bg-cendia-red-dark transition-colors shadow-md shadow-red-900/20">Inscribirme a Nivel Avanzado</a>
+                </div>
+
+                <!-- Tarifa 3: Modalidad Sábados -->
+                <div class="bg-white rounded-3xl p-8 border border-border-subtle shadow-md flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">Programa Sabatino</span>
+                        <h3 class="font-display font-bold text-xl text-slate-900 mb-4">Sábados (15 Meses)</h3>
+                        
+                        <div class="my-6 pb-6 border-b border-slate-100">
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-4xl sm:text-5xl font-display font-black text-cendia-red">USD $100</span>
+                                <span class="text-xs text-slate-500 font-bold">/ mes</span>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-1">8:00 am a 1:00 pm (5 horas intensivas)</p>
+                        </div>
+
+                        <ul class="space-y-3 text-xs text-slate-700 font-medium mb-8">
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-cendia-red text-sm">check_circle</span> 15 meses de duración total</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-cendia-red text-sm">check_circle</span> Ideal para profesionales ocupados</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-cendia-red text-sm">check_circle</span> Mismo aval SETEC y Cambridge</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" class="block w-full text-center py-3.5 rounded-xl bg-slate-900 text-white font-bold text-xs hover:bg-cendia-red transition-colors shadow-sm">Inscribirme en Sábados</a>
+                </div>
+            </div>
+
+            <!-- Conceptos Adicionales Claros: Matrícula, Plataforma y Prueba -->
+            <div class="grid sm:grid-cols-3 gap-6 bg-white p-6 sm:p-8 rounded-3xl border border-border-subtle shadow-md">
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-surface-gray">
+                    <div class="w-10 h-10 rounded-xl bg-cendia-red text-white flex items-center justify-center flex-shrink-0">
+                        <span class="material-symbols-outlined">badge</span>
+                    </div>
+                    <div>
+                        <p class="font-display font-black text-slate-900 text-lg">USD $70</p>
+                        <p class="text-xs font-bold text-cendia-red uppercase">Matrícula Anual</p>
+                        <p class="text-[11px] text-slate-500 mt-0.5">Pago único por todo el año lectivo.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-surface-gray">
+                    <div class="w-10 h-10 rounded-xl bg-cendia-red text-white flex items-center justify-center flex-shrink-0">
+                        <span class="material-symbols-outlined">devices</span>
+                    </div>
+                    <div>
+                        <p class="font-display font-black text-slate-900 text-lg">USD $36</p>
+                        <p class="text-xs font-bold text-cendia-red uppercase">Plataforma Digital</p>
+                        <p class="text-[11px] text-slate-500 mt-0.5">Acceso total para todo el programa.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-red-50 border border-red-200" id="prueba-ubicacion">
+                    <div class="w-10 h-10 rounded-xl bg-cendia-red text-white flex items-center justify-center flex-shrink-0">
+                        <span class="material-symbols-outlined">fact_check</span>
+                    </div>
+                    <div>
+                        <p class="font-display font-black text-cendia-red text-lg">USD $20</p>
+                        <p class="text-xs font-bold text-slate-900 uppercase">Prueba de Ubicación</p>
+                        <p class="text-[11px] text-slate-600 mt-0.5">En oficinas: L-V 7am-3pm | Sáb 9am-12pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: UBICACIÓN, MAPA INTERACTIVO & CONTACTO -->
+    <section class="py-16 md:py-24 bg-white relative overflow-hidden" id="ubicacion">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold text-cendia-red uppercase tracking-widest bg-cendia-red-soft px-3.5 py-1.5 rounded-full border border-red-200">Sede Principal</span>
+                <h2 class="font-display text-3xl md:text-4xl font-extrabold text-slate-900 mt-3 mb-4">Nuestra Ubicación en Quito</h2>
+                <p class="text-slate-600 text-base">Visítanos en La Mariscal para realizar tu prueba de ubicación presencial o solicitar asesoría personalizada.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-start mb-16">
+                <!-- Info de Ubicación & Horarios de Prueba -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="bg-surface-gray p-6 sm:p-8 rounded-3xl border border-border-subtle space-y-6 shadow-sm">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-cendia-red-soft border border-red-200 flex items-center justify-center text-cendia-red flex-shrink-0">
+                                <span class="material-symbols-outlined text-2xl">location_on</span>
+                            </div>
+                            <div>
+                                <h4 class="font-display font-bold text-base text-slate-900">Sede La Mariscal – Quito</h4>
+                                <p class="text-sm text-slate-600 mt-0.5 font-medium">Baquerizo Moreno E8-26 y Almagro</p>
+                                <a href="https://maps.google.com/maps/search/CENDIA/@-0.20270000398159027,-78.48860168457031,17z?hl=es" target="_blank" class="inline-flex items-center gap-1 text-xs font-bold text-cendia-red hover:underline mt-2">
+                                    <span>Abrir en Google Maps</span>
+                                    <span class="material-symbols-outlined text-sm">open_in_new</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Horarios de Prueba de Ubicación -->
+                        <div class="border-t border-slate-200 pt-5">
+                            <div class="flex items-center gap-2 text-xs font-bold uppercase text-cendia-red mb-3">
+                                <span class="material-symbols-outlined text-base">event_available</span>
+                                <span>Horarios para Prueba de Ubicación ($20 en oficinas):</span>
+                            </div>
+                            <div class="space-y-2 text-xs text-slate-700 bg-white p-4 rounded-2xl border border-slate-200">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-semibold">Lunes a Viernes:</span>
+                                    <span class="font-bold text-slate-900 bg-slate-100 px-2 py-1 rounded">7:00 am a 3:00 pm</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="font-semibold">Sábados:</span>
+                                    <span class="font-bold text-slate-900 bg-slate-100 px-2 py-1 rounded">9:00 am a 12:00 pm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Channels -->
+                        <div class="border-t border-slate-200 pt-5 space-y-3 text-sm">
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-slate-500">call</span>
+                                <div>
+                                    <p class="text-xs text-slate-500 font-medium">Teléfono Fijo</p>
+                                    <a href="tel:022528551" class="font-bold text-slate-900 hover:text-cendia-red transition-colors">022-528-551</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-whatsapp-green" style="font-variation-settings: 'FILL' 1;">chat</span>
+                                <div>
+                                    <p class="text-xs text-slate-500 font-medium">WhatsApp Oficial</p>
+                                    <a href="https://wa.me/593998720970" target="_blank" class="font-bold text-whatsapp-green hover:underline">+593 99 872 0970</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps Interactivo Embebido -->
+                <div class="lg:col-span-7">
+                    <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-white h-[420px] sm:h-[460px] relative bg-slate-100">
+                        <iframe 
+                            title="Ubicación CENDIA English Institute"
+                            src="https://maps.google.com/maps?q=-0.20270000398159027,-78.48860168457031&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="w-full h-full"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FORMULARIO DE CONTACTO / AGENDAMIENTO -->
+            <div class="bg-surface-gray rounded-3xl p-8 sm:p-12 border border-border-subtle shadow-md" id="contacto">
+                <div class="max-w-2xl mx-auto text-center mb-10">
+                    <h3 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900 mb-3">Agenda tu Prueba de Ubicación o Solicita Información</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">Déjanos tus datos para coordinar tu prueba diagnóstica ($20 en oficinas) o enviarte la información completa a tu WhatsApp.</p>
+                </div>
+
+                <div class="max-w-2xl mx-auto bg-white p-6 sm:p-10 rounded-2xl shadow-sm border border-border-subtle">
+                    <form id="contact-form" class="space-y-4" onsubmit="handleFormSubmit(event)">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label class="block text-xs font-semibold text-on-surface mb-1.5" for="firstName">Nombre *</label>
+                                <label class="block text-xs font-bold text-slate-800 mb-1.5" for="firstName">Nombre *</label>
                                 <input 
-                                    class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-sm" 
+                                    class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm" 
                                     id="firstName" 
                                     name="firstName" 
                                     required 
                                     type="text"
-                                    placeholder="Ej. Carlos"
+                                    placeholder="Ej. Juan"
                                 >
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-on-surface mb-1.5" for="lastName">Apellido *</label>
+                                <label class="block text-xs font-bold text-slate-800 mb-1.5" for="lastName">Apellido *</label>
                                 <input 
-                                    class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-sm" 
+                                    class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm" 
                                     id="lastName" 
                                     name="lastName" 
                                     required 
                                     type="text"
-                                    placeholder="Ej. Morales"
+                                    placeholder="Ej. Pérez"
                                 >
                             </div>
                         </div>
 
                         <div>
-                            <label class="block text-xs font-semibold text-on-surface mb-1.5" for="email">Dirección de correo electrónico *</label>
+                            <label class="block text-xs font-bold text-slate-800 mb-1.5" for="phone">Celular (WhatsApp) *</label>
                             <input 
-                                class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-sm" 
-                                id="email" 
-                                name="email" 
-                                required 
-                                type="email"
-                                placeholder="carlos.morales@ejemplo.com"
-                            >
-                        </div>
-
-                        <div>
-                            <label class="block text-xs font-semibold text-on-surface mb-1.5" for="phone">Celular (WhatsApp) *</label>
-                            <input 
-                                class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-sm" 
+                                class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm" 
                                 id="phone" 
                                 name="phone" 
                                 required 
                                 type="tel"
-                                placeholder="099 123 4567"
+                                placeholder="Ej. 099 123 4567"
                             >
                         </div>
 
                         <div>
-                            <label class="block text-xs font-semibold text-on-surface mb-1.5" for="location">¿Dónde quieres estudiar?</label>
-                            <select 
-                                class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-sm text-on-surface" 
-                                id="location" 
-                                name="location"
+                            <label class="block text-xs font-bold text-slate-800 mb-1.5" for="email">Correo electrónico *</label>
+                            <input 
+                                class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm" 
+                                id="email" 
+                                name="email" 
+                                required 
+                                type="email"
+                                placeholder="juan.perez@ejemplo.com"
                             >
-                                <option value="">Selecciona una opción</option>
-                                <option value="mariscal">Sede La Mariscal (Quito Norte)</option>
-                                <option value="calderon">Sede Calderón</option>
-                                <option value="online">100% Online en vivo</option>
-                            </select>
                         </div>
 
-                        <div>
-                            <label class="block text-xs font-semibold text-on-surface mb-1.5" for="course">¿En qué estás interesad@?</label>
-                            <select 
-                                class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all text-sm text-on-surface" 
-                                id="course" 
-                                name="course"
-                            >
-                                <option value="">Selecciona un curso</option>
-                                <option value="ingles">Curso de inglés general</option>
-                                <option value="aptis">Examen de inglés Aptis / Cambridge</option>
-                                <option value="personalizado">Curso personalizado 1 a 1</option>
-                                <option value="empresas">Curso para empresas</option>
-                            </select>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-800 mb-1.5" for="schedule">Horario de Preferencia</label>
+                                <select 
+                                    class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm text-slate-900" 
+                                    id="schedule" 
+                                    name="schedule"
+                                >
+                                    <option value="Presencial: 7:00 am - 8:40 am">Presencial: 7:00 am - 8:40 am</option>
+                                    <option value="Presencial: 9:00 am - 10:50 am">Presencial: 9:00 am - 10:50 am</option>
+                                    <option value="Presencial: 3:00 pm - 4:50 pm">Presencial: 3:00 pm - 4:50 pm</option>
+                                    <option value="Sábados: 8:00 am - 1:00 pm">Sábados: 8:00 am - 1:00 pm</option>
+                                    <option value="Online: 5:00 pm - 6:50 pm">Online: 5:00 pm - 6:50 pm</option>
+                                    <option value="Online: 7:00 pm - 8:40 pm">Online: 7:00 pm - 8:40 pm</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-800 mb-1.5" for="service">¿Qué deseas solicitar?</label>
+                                <select 
+                                    class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm text-slate-900" 
+                                    id="service" 
+                                    name="service"
+                                >
+                                    <option value="Prueba de Ubicación ($20 en oficinas)">Prueba de Ubicación ($20 en oficinas)</option>
+                                    <option value="Inscripción Programa 12 Meses (Lunes a Viernes)">Inscripción Programa 12 Meses (L-V)</option>
+                                    <option value="Inscripción Programa Sábados (15 Meses)">Inscripción Programa Sábados (15 Meses)</option>
+                                    <option value="Certificación Cambridge / SETEC / Oxford">Certificación Cambridge / SETEC / Oxford</option>
+                                </select>
+                            </div>
                         </div>
 
                         <button 
                             id="submit-btn"
-                            class="w-full mt-6 bg-primary text-white font-semibold text-sm py-4 rounded-xl hover:bg-primary-container transition-all shadow-md hover:shadow-lg active:scale-95 flex justify-center items-center gap-2" 
+                            class="w-full mt-6 bg-cendia-red text-white font-bold text-sm py-4 rounded-xl hover:bg-cendia-red-dark transition-all shadow-lg shadow-red-900/25 active:scale-95 flex justify-center items-center gap-2" 
                             type="submit"
                         >
-                            <span class="material-symbols-outlined text-xl">edit_note</span>
-                            <span>Quiero mi prueba de nivel gratis · ¡Sin costo!</span>
+                            <span class="material-symbols-outlined text-xl">send</span>
+                            <span>Enviar Solicitud y Contactar por WhatsApp</span>
                         </button>
                     </form>
                 </div>
@@ -606,75 +792,89 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-white border-t border-border-subtle w-full py-12 md:py-16">
+    <!-- FOOTER CON REDES SOCIALES -->
+    <footer class="bg-secondary text-white w-full py-12 md:py-16 border-t border-slate-800">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
             <div class="col-span-1 md:col-span-2">
-                <a class="font-display text-2xl font-bold text-primary mb-3 block" href="#">
-                    CENDIA
+                <a class="flex items-center gap-2.5 font-display text-2xl font-black text-white mb-3" href="#">
+                    <div class="w-8 h-8 rounded-lg bg-cendia-red flex items-center justify-center text-white">
+                        <span class="material-symbols-outlined text-lg">school</span>
+                    </div>
+                    <span>CENDIA</span>
                 </a>
-                <p class="text-sm text-on-surface-variant mb-4 max-w-sm">Academic Excellence in Quito. Formación en inglés con estándares internacionales y resultados comprobados.</p>
-                <div class="flex items-center gap-3 text-on-surface-variant">
-                    <a class="w-9 h-9 rounded-full bg-surface-gray border border-border-subtle flex items-center justify-center hover:text-primary hover:border-primary transition-colors" href="#" title="Web">
-                        <span class="material-symbols-outlined text-lg">public</span>
-                    </a>
-                    <a class="w-9 h-9 rounded-full bg-surface-gray border border-border-subtle flex items-center justify-center hover:text-emerald-600 hover:border-emerald-600 transition-colors" href="https://wa.me/593998720970" target="_blank" title="WhatsApp">
+                <p class="text-sm text-slate-400 mb-4 max-w-sm">Instituto de Inglés avalado por SETEC y Centro Evaluador Cambridge & Oxford en Quito, Ecuador.</p>
+                <p class="text-xs text-slate-400 mb-6">📍 Baquerizo Moreno E8-26 y Almagro, La Mariscal · Tel: 022-528-551</p>
+                
+                <!-- Redes Sociales Oficiales -->
+                <div class="flex items-center gap-3">
+                    <a class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-300 hover:bg-cendia-red hover:text-white hover:border-cendia-red transition-all" href="https://wa.me/593998720970" target="_blank" title="WhatsApp">
                         <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">chat</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-300 hover:bg-cendia-red hover:text-white hover:border-cendia-red transition-all" href="https://maps.google.com/maps/search/CENDIA/@-0.20270000398159027,-78.48860168457031,17z?hl=es" target="_blank" title="Google Maps">
+                        <span class="material-symbols-outlined text-lg">location_on</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-300 hover:bg-cendia-red hover:text-white hover:border-cendia-red transition-all" href="https://www.facebook.com" target="_blank" title="Facebook">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-300 hover:bg-cendia-red hover:text-white hover:border-cendia-red transition-all" href="https://www.instagram.com" target="_blank" title="Instagram">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                     </a>
                 </div>
             </div>
 
             <div class="col-span-1">
-                <h4 class="font-display font-bold text-sm text-primary mb-4 uppercase tracking-wider">Menú</h4>
-                <ul class="space-y-2.5 text-sm">
-                    <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Inicio</a></li>
-                    <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#cursos">Cursos</a></li>
-                    <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#metodo">Método</a></li>
-                    <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#precios">Precios</a></li>
+                <h4 class="font-display font-bold text-xs text-cendia-red uppercase tracking-wider mb-4">Navegación</h4>
+                <ul class="space-y-2.5 text-xs text-slate-400">
+                    <li><a class="hover:text-white transition-colors" href="#">Inicio</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#programa">Programa (12 Meses)</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#horarios">Horarios Presencial/Online</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#certificaciones">SETEC & Cambridge</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#costos">Costos y Tarifas</a></li>
                 </ul>
             </div>
 
             <div class="col-span-1">
-                <h4 class="font-display font-bold text-sm text-primary mb-4 uppercase tracking-wider">Legal</h4>
-                <ul class="space-y-2.5 text-sm">
-                    <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
-                    <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
-                    <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#contacto">Soporte y Atención</a></li>
+                <h4 class="font-display font-bold text-xs text-cendia-red uppercase tracking-wider mb-4">Ubicación & Prueba</h4>
+                <ul class="space-y-2.5 text-xs text-slate-400">
+                    <li><span class="text-white font-semibold">Prueba de Ubicación:</span> USD $20</li>
+                    <li><span>Lunes a Viernes: 7am - 3pm</span></li>
+                    <li><span>Sábados: 9am - 12pm</span></li>
+                    <li><a class="text-cendia-red hover:underline font-semibold" href="#ubicacion">Ver mapa interactivo →</a></li>
                 </ul>
             </div>
         </div>
 
-        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-10 pt-6 border-t border-border-subtle text-center text-xs text-on-surface-variant">
-            <p>© 2026 Cendia English Institute - Academic Excellence in Quito. All rights reserved.</p>
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-10 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">
+            <p>© 2026 CENDIA English Institute - Instituto avalado por SETEC y Centro Evaluador Cambridge en Quito. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <!-- Bottom Navigation Bar (Mobile) -->
-    <nav class="bg-white/95 backdrop-blur-md fixed bottom-0 w-full md:hidden z-50 border-t border-border-subtle shadow-[0_-4px_20px_rgba(0,0,0,0.05)] flex justify-around items-center h-16">
-        <a class="text-on-surface-variant hover:text-primary flex flex-col items-center flex-1 py-1.5 transition-colors" href="tel:022528551">
+    <nav class="bg-white/95 backdrop-blur-md fixed bottom-0 w-full md:hidden z-50 border-t border-border-subtle shadow-[0_-4px_20px_rgba(0,0,0,0.08)] flex justify-around items-center h-16">
+        <a class="text-slate-600 hover:text-cendia-red flex flex-col items-center flex-1 py-1.5 transition-colors" href="tel:022528551">
             <span class="material-symbols-outlined text-xl">call</span>
-            <span class="text-[11px] font-medium mt-0.5">Llamar</span>
+            <span class="text-[10px] font-bold mt-0.5">Llamar</span>
         </a>
         <a class="text-whatsapp-green flex flex-col items-center flex-1 py-1.5 transition-colors" href="https://wa.me/593998720970" target="_blank">
             <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">chat</span>
-            <span class="text-[11px] font-bold mt-0.5">WhatsApp</span>
+            <span class="text-[10px] font-black mt-0.5">WhatsApp</span>
         </a>
-        <a class="text-on-surface-variant hover:text-primary flex flex-col items-center flex-1 py-1.5 transition-colors" href="#cursos">
-            <span class="material-symbols-outlined text-xl">school</span>
-            <span class="text-[11px] font-medium mt-0.5">Cursos</span>
+        <a class="text-slate-600 hover:text-cendia-red flex flex-col items-center flex-1 py-1.5 transition-colors" href="#horarios">
+            <span class="material-symbols-outlined text-xl">schedule</span>
+            <span class="text-[10px] font-bold mt-0.5">Horarios</span>
         </a>
-        <a class="text-on-surface-variant hover:text-primary flex flex-col items-center flex-1 py-1.5 transition-colors" href="#contacto">
+        <a class="text-slate-600 hover:text-cendia-red flex flex-col items-center flex-1 py-1.5 transition-colors" href="#ubicacion">
             <span class="material-symbols-outlined text-xl">location_on</span>
-            <span class="text-[11px] font-medium mt-0.5">Contacto</span>
+            <span class="text-[10px] font-bold mt-0.5">Mapa</span>
         </a>
     </nav>
 
     <!-- Floating WhatsApp Button (Desktop) -->
     <a 
-        class="hidden md:flex fixed bottom-8 right-8 bg-whatsapp-green text-white w-14 h-14 rounded-full items-center justify-center shadow-xl hover:scale-110 transition-transform z-40 pulse-whatsapp" 
-        href="https://wa.me/593998720970?text=Hola,%20quisiera%20información%20sobre%20los%20cursos%20de%20inglés" 
+        class="hidden md:flex fixed bottom-8 right-8 bg-whatsapp-green text-white w-14 h-14 rounded-full items-center justify-center shadow-2xl hover:scale-110 transition-transform z-40 pulse-whatsapp" 
+        href="https://wa.me/593998720970?text=Hola,%20quisiera%20información%20sobre%20el%20programa%20de%20inglés%20de%20Cendia" 
         target="_blank"
-        title="Contáctanos por WhatsApp"
+        title="Escríbenos por WhatsApp"
     >
         <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
@@ -685,14 +885,14 @@
     <div id="chatbot-container" class="fixed bottom-24 right-4 sm:right-8 z-50 hidden transition-all duration-300 transform scale-95 opacity-0">
         <div class="bg-white w-[340px] sm:w-[370px] h-[520px] rounded-3xl shadow-2xl border border-border-subtle flex flex-col overflow-hidden">
             <!-- Header -->
-            <div class="bg-primary p-4 flex justify-between items-center text-white">
+            <div class="bg-cendia-red p-4 flex justify-between items-center text-white">
                 <div class="flex items-center gap-3">
                     <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center">
                         <span class="material-symbols-outlined text-xl">smart_toy</span>
                     </div>
                     <div>
                         <span class="font-display font-bold text-sm block">Asistente Cendia</span>
-                        <span class="text-[11px] text-emerald-300 flex items-center gap-1 font-medium">
+                        <span class="text-[11px] text-red-200 flex items-center gap-1 font-medium">
                             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping inline-block"></span> En línea
                         </span>
                     </div>
@@ -705,20 +905,20 @@
             <!-- Message Area -->
             <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-3.5 bg-surface-gray text-sm">
                 <div class="flex items-start gap-2.5">
-                    <div class="w-7 h-7 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 text-xs mt-1">
+                    <div class="w-7 h-7 rounded-full bg-cendia-red text-white flex items-center justify-center flex-shrink-0 text-xs mt-1">
                         <span class="material-symbols-outlined text-sm">smart_toy</span>
                     </div>
-                    <div class="bg-white text-on-surface p-3.5 rounded-2xl rounded-tl-none shadow-sm border border-border-subtle leading-relaxed">
-                        ¡Hola! 👋 Soy el asistente virtual de <strong>Cendia English Institute</strong>. ¿En qué puedo ayudarte hoy?
+                    <div class="bg-white text-slate-800 p-3.5 rounded-2xl rounded-tl-none shadow-sm border border-border-subtle leading-relaxed">
+                        ¡Hola! 👋 Soy el asistente de <strong>CENDIA English Institute</strong>. ¿En qué te puedo ayudar hoy?
                     </div>
                 </div>
 
                 <!-- Quick Action Chips -->
                 <div class="flex flex-wrap gap-2 pt-2" id="quick-chips">
-                    <button onclick="sendQuickReply('Ver cursos')" class="px-3 py-1.5 bg-white border border-primary/30 text-primary font-medium rounded-full text-xs hover:bg-primary hover:text-white transition-all shadow-sm">Ver cursos</button>
-                    <button onclick="sendQuickReply('Prueba de nivel')" class="px-3 py-1.5 bg-white border border-primary/30 text-primary font-medium rounded-full text-xs hover:bg-primary hover:text-white transition-all shadow-sm">Prueba de nivel gratis</button>
-                    <button onclick="sendQuickReply('Sedes y horarios')" class="px-3 py-1.5 bg-white border border-primary/30 text-primary font-medium rounded-full text-xs hover:bg-primary hover:text-white transition-all shadow-sm">Sedes y horarios</button>
-                    <button onclick="sendQuickReply('Precios')" class="px-3 py-1.5 bg-white border border-primary/30 text-primary font-medium rounded-full text-xs hover:bg-primary hover:text-white transition-all shadow-sm">Precios y promociones</button>
+                    <button onclick="sendQuickReply('Horarios y Niveles')" class="px-3 py-1.5 bg-white border border-cendia-red/30 text-cendia-red font-semibold rounded-full text-xs hover:bg-cendia-red hover:text-white transition-all shadow-sm">Horarios y 12 Niveles</button>
+                    <button onclick="sendQuickReply('Precios y Costos')" class="px-3 py-1.5 bg-white border border-cendia-red/30 text-cendia-red font-semibold rounded-full text-xs hover:bg-cendia-red hover:text-white transition-all shadow-sm">Precios y Costos</button>
+                    <button onclick="sendQuickReply('Prueba de Ubicación')" class="px-3 py-1.5 bg-white border border-cendia-red/30 text-cendia-red font-semibold rounded-full text-xs hover:bg-cendia-red hover:text-white transition-all shadow-sm">Prueba de Ubicación ($20)</button>
+                    <button onclick="sendQuickReply('Aval SETEC y Cambridge')" class="px-3 py-1.5 bg-white border border-cendia-red/30 text-cendia-red font-semibold rounded-full text-xs hover:bg-cendia-red hover:text-white transition-all shadow-sm">Aval SETEC & Cambridge</button>
                 </div>
             </div>
 
@@ -729,10 +929,10 @@
                         type="text" 
                         id="chat-input"
                         placeholder="Escribe tu consulta..." 
-                        class="w-full pl-4 pr-12 py-3 rounded-full border border-outline-variant bg-surface-gray focus:bg-white focus:ring-2 focus:ring-primary focus:border-primary outline-none text-xs sm:text-sm"
+                        class="w-full pl-4 pr-12 py-3 rounded-full border border-outline-variant bg-surface-gray focus:bg-white focus:ring-2 focus:ring-cendia-red focus:border-cendia-red outline-none text-xs sm:text-sm"
                         autocomplete="off"
                     >
-                    <button type="submit" class="absolute right-2.5 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:bg-primary-container transition-transform hover:scale-105" aria-label="Enviar mensaje">
+                    <button type="submit" class="absolute right-2.5 w-8 h-8 rounded-full bg-cendia-red text-white flex items-center justify-center hover:bg-cendia-red-dark transition-transform hover:scale-105" aria-label="Enviar mensaje">
                         <span class="material-symbols-outlined text-sm">send</span>
                     </button>
                 </form>
@@ -744,7 +944,7 @@
     <button 
         id="chatbot-trigger-btn"
         onclick="toggleChatbot()" 
-        class="hidden md:flex fixed bottom-8 right-24 bg-primary text-white w-14 h-14 rounded-full items-center justify-center shadow-xl hover:scale-110 transition-transform z-40"
+        class="hidden md:flex fixed bottom-8 right-24 bg-cendia-red text-white w-14 h-14 rounded-full items-center justify-center shadow-2xl hover:scale-110 transition-transform z-40"
         title="Abrir chat de ayuda"
     >
         <span class="material-symbols-outlined text-2xl">chat</span>
@@ -756,16 +956,16 @@
             <div class="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-4">
                 <span class="material-symbols-outlined text-4xl">check_circle</span>
             </div>
-            <h3 class="font-display font-bold text-2xl text-primary mb-2">¡Solicitud Recibida!</h3>
-            <p class="text-sm text-on-surface-variant mb-6 leading-relaxed" id="modal-message">
-                Gracias por registrarte. Un asesor académico de Cendia se comunicará contigo vía WhatsApp o llamada para coordinar tu prueba de nivel gratuita.
+            <h3 class="font-display font-black text-2xl text-slate-900 mb-2">¡Solicitud Registrada!</h3>
+            <p class="text-sm text-slate-600 mb-6 leading-relaxed" id="modal-message">
+                Gracias por tu interés en CENDIA. Hemos preparado tu solicitud para enviarla directamente a nuestro equipo de admisiones.
             </p>
             <div class="flex flex-col gap-3">
-                <a id="modal-whatsapp-link" href="#" target="_blank" class="w-full py-3.5 px-4 rounded-xl bg-whatsapp-green text-white font-semibold text-sm hover:bg-whatsapp-green-hover transition-all flex items-center justify-center gap-2">
+                <a id="modal-whatsapp-link" href="#" target="_blank" class="w-full py-3.5 px-4 rounded-xl bg-whatsapp-green text-white font-bold text-sm hover:bg-whatsapp-green-hover transition-all flex items-center justify-center gap-2 shadow-md">
                     <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">chat</span>
                     Confirmar por WhatsApp ahora
                 </a>
-                <button onclick="closeSuccessModal()" class="w-full py-3 px-4 rounded-xl bg-surface-gray text-on-surface-variant font-semibold text-xs hover:bg-surface-container-high transition-colors">
+                <button onclick="closeSuccessModal()" class="w-full py-3 px-4 rounded-xl bg-surface-gray text-slate-600 font-bold text-xs hover:bg-slate-200 transition-colors">
                     Cerrar
                 </button>
             </div>

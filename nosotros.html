@@ -32,7 +32,9 @@
                         'cendia-red': '#C51F2A',
                         'cendia-red-dark': '#9E1520',
                         'cendia-red-soft': '#FDF2F2',
-                        'secondary': '#060D1E',
+                        'secondary': '#2F2C79',
+                        'cendia-blue': '#2F2C79',
+                        'cendia-blue-dark': '#24225E',
                         'surface-gray': '#F8FAFC',
                         'border-subtle': '#E2E8F0',
                         'whatsapp-green': '#25D366',
@@ -54,13 +56,13 @@
 <body class="font-sans antialiased text-slate-800 bg-white min-h-screen flex flex-col selection:bg-cendia-red selection:text-white">
 
     <!-- Top Announcement Bar -->
-    <div class="bg-secondary text-white py-2 px-4 text-xs border-b border-slate-800">
+    <div class="bg-secondary text-white py-2 px-4 text-xs border-b border-indigo-900/40">
         <div class="max-w-container-max mx-auto flex justify-between items-center flex-wrap gap-2">
             <div class="flex items-center gap-2">
                 <span class="bg-cendia-red text-[10px] font-black uppercase px-2 py-0.5 rounded tracking-wider">Oficial</span>
-                <span class="font-medium text-slate-300">Instituto avalado por <strong>SETEC</strong> · Centro Evaluador <strong>Cambridge & Oxford</strong></span>
+                <span class="font-medium text-slate-200">Instituto avalado por <strong>SETEC</strong> · Centro Evaluador <strong>Cambridge & Oxford</strong></span>
             </div>
-            <div class="flex items-center gap-4 text-slate-300">
+            <div class="flex items-center gap-4 text-slate-200">
                 <a href="tel:022528551" class="hover:text-white transition-colors flex items-center gap-1">
                     <span class="material-symbols-outlined text-sm">call</span> 022-528-551
                 </a>
@@ -71,8 +73,8 @@
         </div>
     </div>
 
-    <!-- Sticky Header (6-Page Navigation - Dark Navy) -->
-    <header class="bg-[#060D1E]/95 backdrop-blur-md sticky top-0 w-full z-40 border-b border-slate-800 shadow-md transition-all duration-300" id="main-header">
+    <!-- Sticky Header (6-Page Navigation - Vibrant CENDIA Blue) -->
+    <header class="bg-[#2F2C79]/95 backdrop-blur-md sticky top-0 w-full z-40 border-b border-indigo-900/30 shadow-md transition-all duration-300" id="main-header">
         <div class="flex justify-between items-center max-w-container-max mx-auto px-4 sm:px-8 py-3.5">
             <!-- Brand Logo Oficial -->
             <a class="flex items-center gap-2.5 hover:opacity-95 transition-opacity" href="index.html">
@@ -98,7 +100,7 @@
                 <a class="text-xs font-black uppercase tracking-wider bg-cendia-red text-white px-4 sm:px-5 py-2.5 rounded-full hover:bg-cendia-red-dark transition-all shadow-md shadow-red-900/40 active:scale-95 text-center flex items-center gap-1.5" href="contacto.html">
                     <span>Prueba de Ubicación</span>
                 </a>
-                <a class="w-10 h-10 rounded-full bg-whatsapp-green hover:bg-whatsapp-green-hover text-white flex items-center justify-center transition-all shadow-md shadow-emerald-950/30 flex-shrink-0" href="https://wa.me/593998720970?text=Hola,%20quisiera%20conocer%20más%20sobre%20Cendia%20English%20Institute" rel="noopener noreferrer" target="_blank" title="WhatsApp">
+                <a class="w-10 h-10 rounded-full bg-whatsapp-green hover:bg-whatsapp-green-hover text-white flex items-center justify-center transition-all shadow-md shadow-emerald-950/30 flex-shrink-0" href="https://wa.me/593998720970?text=Hola,%20quisiera%20información%20sobre%20el%20instituto%20Cendia" rel="noopener noreferrer" target="_blank" title="WhatsApp">
                     <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">chat</span>
                 </a>
             </div>
@@ -106,7 +108,7 @@
     </header>
 
     <!-- Main Content Section: Timeline + Why Choose Cendia + Photo Gallery -->
-    <main class="flex-1 bg-white">
+    <main class="flex-grow">
         
         <!-- SECTION 1: HERO & TIMELINE -->
         <section class="py-14 sm:py-20 bg-white">
@@ -115,7 +117,7 @@
                 <!-- Headline -->
                 <div class="mb-14">
                     <span class="text-xs font-black text-cendia-red uppercase tracking-widest block mb-2">SOBRE CENDIA</span>
-                    <h1 class="font-display text-3xl sm:text-5xl lg:text-6xl font-black text-[#0B2341] leading-tight uppercase tracking-tight mb-4">
+                    <h1 class="font-display text-3xl sm:text-5xl lg:text-6xl font-black text-[#2F2C79] leading-tight uppercase tracking-tight mb-4">
                         ENSEÑANDO INGLÉS<br>DESDE 1978
                     </h1>
                     <p class="text-sm sm:text-base text-slate-600 max-w-2xl leading-relaxed">
@@ -127,15 +129,15 @@
                 <div class="relative mt-8 mb-6">
                     
                     <!-- Horizontal Line connecting the dots (hidden on small mobile, visible sm+) -->
-                    <div class="hidden sm:block absolute top-[22px] left-8 right-8 h-[3px] bg-[#0B2341]/20 -z-0"></div>
+                    <div class="hidden sm:block absolute top-[22px] left-8 right-8 h-[3px] bg-[#2F2C79]/20 -z-0"></div>
 
                     <!-- 5 Milestones Grid -->
                     <div class="grid grid-cols-1 sm:grid-cols-5 gap-8 sm:gap-4 relative z-10">
                         
                         <!-- Milestone 1: 1978 -->
                         <div class="flex flex-col items-start sm:items-center text-left sm:text-center group">
-                            <span class="font-display font-black text-lg text-[#0B2341] mb-2 sm:mb-2.5">1978</span>
-                            <div class="w-4 h-4 rounded-full bg-[#0B2341] ring-4 ring-white mb-3 shadow-xs"></div>
+                            <span class="font-display font-black text-lg text-[#2F2C79] mb-2 sm:mb-2.5">1978</span>
+                            <div class="w-4 h-4 rounded-full bg-[#2F2C79] ring-4 ring-white mb-3 shadow-xs"></div>
                             <p class="text-xs text-slate-600 leading-relaxed max-w-[200px]">
                                 Iniciamos nuestro camino con un sueño: enseñar inglés con calidad.
                             </p>
@@ -143,8 +145,8 @@
 
                         <!-- Milestone 2: 1990s -->
                         <div class="flex flex-col items-start sm:items-center text-left sm:text-center group">
-                            <span class="font-display font-black text-lg text-[#0B2341] mb-2 sm:mb-2.5">1990s</span>
-                            <div class="w-4 h-4 rounded-full bg-[#0B2341] ring-4 ring-white mb-3 shadow-xs"></div>
+                            <span class="font-display font-black text-lg text-[#2F2C79] mb-2 sm:mb-2.5">1990s</span>
+                            <div class="w-4 h-4 rounded-full bg-[#2F2C79] ring-4 ring-white mb-3 shadow-xs"></div>
                             <p class="text-xs text-slate-600 leading-relaxed max-w-[200px]">
                                 Crecemos y nos consolidamos como instituto líder.
                             </p>
@@ -152,8 +154,8 @@
 
                         <!-- Milestone 3: 2000s -->
                         <div class="flex flex-col items-start sm:items-center text-left sm:text-center group">
-                            <span class="font-display font-black text-lg text-[#0B2341] mb-2 sm:mb-2.5">2000s</span>
-                            <div class="w-4 h-4 rounded-full bg-[#0B2341] ring-4 ring-white mb-3 shadow-xs"></div>
+                            <span class="font-display font-black text-lg text-[#2F2C79] mb-2 sm:mb-2.5">2000s</span>
+                            <div class="w-4 h-4 rounded-full bg-[#2F2C79] ring-4 ring-white mb-3 shadow-xs"></div>
                             <p class="text-xs text-slate-600 leading-relaxed max-w-[200px]">
                                 Nuevos programas y alianzas internacionales.
                             </p>
@@ -161,8 +163,8 @@
 
                         <!-- Milestone 4: 2010s -->
                         <div class="flex flex-col items-start sm:items-center text-left sm:text-center group">
-                            <span class="font-display font-black text-lg text-[#0B2341] mb-2 sm:mb-2.5">2010s</span>
-                            <div class="w-4 h-4 rounded-full bg-[#0B2341] ring-4 ring-white mb-3 shadow-xs"></div>
+                            <span class="font-display font-black text-lg text-[#2F2C79] mb-2 sm:mb-2.5">2010s</span>
+                            <div class="w-4 h-4 rounded-full bg-[#2F2C79] ring-4 ring-white mb-3 shadow-xs"></div>
                             <p class="text-xs text-slate-600 leading-relaxed max-w-[200px]">
                                 Innovación en metodología y expansión académica.
                             </p>
@@ -192,7 +194,7 @@
         <section class="py-14 sm:py-16 bg-white">
             <div class="max-w-container-max mx-auto px-4 sm:px-8">
                 
-                <h2 class="font-display text-2xl sm:text-3xl font-black text-[#0B2341] tracking-tight mb-10 text-left sm:text-left">
+                <h2 class="font-display text-2xl sm:text-3xl font-black text-[#2F2C79] tracking-tight mb-10 text-left sm:text-left">
                     ¿POR QUÉ ELEGIR CENDIA?
                 </h2>
 
@@ -201,7 +203,7 @@
                     
                     <!-- Pillar 1 -->
                     <div class="flex flex-col items-center text-center group">
-                        <div class="w-16 h-16 rounded-full border-2 border-[#0B2341]/80 flex items-center justify-center text-[#0B2341] mb-3 group-hover:border-cendia-red group-hover:text-cendia-red transition-all group-hover:scale-105 shadow-xs">
+                        <div class="w-16 h-16 rounded-full border-2 border-[#2F2C79]/80 flex items-center justify-center text-[#2F2C79] mb-3 group-hover:border-cendia-red group-hover:text-cendia-red transition-all group-hover:scale-105 shadow-xs">
                             <span class="material-symbols-outlined text-3xl">history_edu</span>
                         </div>
                         <span class="font-bold text-xs sm:text-sm text-slate-800 leading-snug">
@@ -211,7 +213,7 @@
 
                     <!-- Pillar 2 -->
                     <div class="flex flex-col items-center text-center group">
-                        <div class="w-16 h-16 rounded-full border-2 border-[#0B2341]/80 flex items-center justify-center text-[#0B2341] mb-3 group-hover:border-cendia-red group-hover:text-cendia-red transition-all group-hover:scale-105 shadow-xs">
+                        <div class="w-16 h-16 rounded-full border-2 border-[#2F2C79]/80 flex items-center justify-center text-[#2F2C79] mb-3 group-hover:border-cendia-red group-hover:text-cendia-red transition-all group-hover:scale-105 shadow-xs">
                             <span class="material-symbols-outlined text-3xl">support_agent</span>
                         </div>
                         <span class="font-bold text-xs sm:text-sm text-slate-800 leading-snug">
@@ -221,7 +223,7 @@
 
                     <!-- Pillar 3 -->
                     <div class="flex flex-col items-center text-center group">
-                        <div class="w-16 h-16 rounded-full border-2 border-[#0B2341]/80 flex items-center justify-center text-[#0B2341] mb-3 group-hover:border-cendia-red group-hover:text-cendia-red transition-all group-hover:scale-105 shadow-xs">
+                        <div class="w-16 h-16 rounded-full border-2 border-[#2F2C79]/80 flex items-center justify-center text-[#2F2C79] mb-3 group-hover:border-cendia-red group-hover:text-cendia-red transition-all group-hover:scale-105 shadow-xs">
                             <span class="material-symbols-outlined text-3xl">forum</span>
                         </div>
                         <span class="font-bold text-xs sm:text-sm text-slate-800 leading-snug">
@@ -231,7 +233,7 @@
 
                     <!-- Pillar 4 -->
                     <div class="flex flex-col items-center text-center group">
-                        <div class="w-16 h-16 rounded-full border-2 border-[#0B2341]/80 flex items-center justify-center text-[#0B2341] mb-3 group-hover:border-cendia-red group-hover:text-cendia-red transition-all group-hover:scale-105 shadow-xs">
+                        <div class="w-16 h-16 rounded-full border-2 border-[#2F2C79]/80 flex items-center justify-center text-[#2F2C79] mb-3 group-hover:border-cendia-red group-hover:text-cendia-red transition-all group-hover:scale-105 shadow-xs">
                             <span class="material-symbols-outlined text-3xl">devices</span>
                         </div>
                         <span class="font-bold text-xs sm:text-sm text-slate-800 leading-snug">
@@ -241,7 +243,7 @@
 
                     <!-- Pillar 5 -->
                     <div class="flex flex-col items-center text-center group">
-                        <div class="w-16 h-16 rounded-full border-2 border-[#0B2341]/80 flex items-center justify-center text-[#0B2341] mb-3 group-hover:border-cendia-red group-hover:text-cendia-red transition-all group-hover:scale-105 shadow-xs">
+                        <div class="w-16 h-16 rounded-full border-2 border-[#2F2C79]/80 flex items-center justify-center text-[#2F2C79] mb-3 group-hover:border-cendia-red group-hover:text-cendia-red transition-all group-hover:scale-105 shadow-xs">
                             <span class="material-symbols-outlined text-3xl">workspace_premium</span>
                         </div>
                         <span class="font-bold text-xs sm:text-sm text-slate-800 leading-snug">
@@ -251,7 +253,7 @@
 
                     <!-- Pillar 6 -->
                     <div class="flex flex-col items-center text-center group">
-                        <div class="w-16 h-16 rounded-full border-2 border-[#0B2341]/80 flex items-center justify-center text-[#0B2341] mb-3 group-hover:border-cendia-red group-hover:text-cendia-red transition-all group-hover:scale-105 shadow-xs">
+                        <div class="w-16 h-16 rounded-full border-2 border-[#2F2C79]/80 flex items-center justify-center text-[#2F2C79] mb-3 group-hover:border-cendia-red group-hover:text-cendia-red transition-all group-hover:scale-105 shadow-xs">
                             <span class="material-symbols-outlined text-3xl">person</span>
                         </div>
                         <span class="font-bold text-xs sm:text-sm text-slate-800 leading-snug">

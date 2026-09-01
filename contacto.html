@@ -73,29 +73,34 @@
         </div>
     </div>
 
-    <!-- Header -->
-    <header class="bg-white/95 backdrop-blur-md sticky top-0 w-full z-40 border-b border-border-subtle shadow-sm">
+    <!-- Sticky Header (5-Page Navigation - Dark Navy) -->
+    <header class="bg-[#060D1E]/95 backdrop-blur-md sticky top-0 w-full z-40 border-b border-slate-800 shadow-md transition-all duration-300" id="main-header">
         <div class="flex justify-between items-center max-w-container-max mx-auto px-4 sm:px-8 py-3.5">
+            <!-- Brand Logo Oficial -->
             <a class="flex items-center gap-2.5 hover:opacity-95 transition-opacity" href="index.html">
-                <img src="cendia-logo.png" alt="CENDIA English Institute Logo" class="h-10 sm:h-12 w-auto object-contain">
+                <img src="cendia-logo.png" alt="CENDIA English Institute Logo" class="h-10 sm:h-12 w-auto object-contain bg-white p-1 rounded-xl shadow-sm">
                 <div class="flex flex-col">
-                    <span class="font-display font-black text-2xl tracking-tight text-cendia-red leading-none">CENDIA</span>
-                    <span class="text-[9px] font-bold tracking-widest text-slate-700 uppercase leading-tight">English Institute</span>
+                    <span class="font-display font-black text-2xl tracking-tight text-white leading-none">CENDIA</span>
+                    <span class="text-[9px] font-bold tracking-widest text-red-300 uppercase leading-tight">English Institute</span>
                 </div>
             </a>
 
+            <!-- 5-Page Desktop Navigation Links -->
             <nav class="hidden lg:flex items-center gap-6">
-                <a class="font-semibold text-xs uppercase tracking-wider text-slate-700 hover:text-cendia-red transition-colors py-2" href="index.html">Inicio</a>
-                <a class="font-semibold text-xs uppercase tracking-wider text-slate-700 hover:text-cendia-red transition-colors py-2" href="programa.html">Programa (12 Niveles)</a>
-                <a class="font-semibold text-xs uppercase tracking-wider text-slate-700 hover:text-cendia-red transition-colors py-2" href="horarios.html">Horarios</a>
-                <a class="font-semibold text-xs uppercase tracking-wider text-slate-700 hover:text-cendia-red transition-colors py-2" href="precios.html">Costos & Precios</a>
-                <a class="font-bold text-xs uppercase tracking-wider text-cendia-red py-2 border-b-2 border-cendia-red" href="contacto.html">Ubicación & Contacto</a>
+                <a class="font-semibold text-xs uppercase tracking-wider text-slate-300 hover:text-white transition-colors py-2" href="index.html">Inicio</a>
+                <a class="font-semibold text-xs uppercase tracking-wider text-slate-300 hover:text-white transition-colors py-2" href="programa.html">Programa (12 Niveles)</a>
+                <a class="font-semibold text-xs uppercase tracking-wider text-slate-300 hover:text-white transition-colors py-2" href="horarios.html">Horarios</a>
+                <a class="font-semibold text-xs uppercase tracking-wider text-slate-300 hover:text-white transition-colors py-2" href="precios.html">Costos & Precios</a>
+                <a class="font-bold text-xs uppercase tracking-wider text-white py-2 border-b-2 border-cendia-red" href="contacto.html">Ubicación & Contacto</a>
             </nav>
 
+            <!-- Actions -->
             <div class="flex items-center gap-3">
-                <a class="text-xs font-bold bg-cendia-red text-white px-4 sm:px-5 py-2.5 rounded-xl hover:bg-cendia-red-dark transition-all shadow-md shadow-red-900/20 text-center flex items-center gap-1.5" href="#agendar">
-                    <span class="material-symbols-outlined text-base">fact_check</span>
+                <a class="text-xs font-black uppercase tracking-wider bg-cendia-red text-white px-4 sm:px-5 py-2.5 rounded-full hover:bg-cendia-red-dark transition-all shadow-md shadow-red-900/40 active:scale-95 text-center flex items-center gap-1.5" href="#agendar">
                     <span>Prueba de Ubicación</span>
+                </a>
+                <a class="w-10 h-10 rounded-full bg-whatsapp-green hover:bg-whatsapp-green-hover text-white flex items-center justify-center transition-all shadow-md shadow-emerald-950/30 flex-shrink-0" href="https://wa.me/593998720970?text=Hola,%20quisiera%20información%20sobre%20los%20cursos%20de%20inglés%20en%20Cendia" rel="noopener noreferrer" target="_blank" title="WhatsApp">
+                    <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">chat</span>
                 </a>
             </div>
         </div>

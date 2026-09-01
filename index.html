@@ -266,66 +266,136 @@
         </div>
     </div>
 
-    <!-- FORMULARIO DE CONTACTO PRINCIPAL EN EL INICIO (CAPTACIÓN DE CLIENTES) -->
-    <section class="py-16 md:py-24 bg-white relative overflow-hidden" id="contacto-directo">
-        <div class="max-w-container-max mx-auto px-4 sm:px-8 grid lg:grid-cols-12 gap-12 items-center">
+           <!-- SECCIÓN: ¿QUÉ QUIERES LOGRAR? (Interactive Goal Selector) -->
+    <section class="py-14 sm:py-20 bg-white border-b border-slate-200/80">
+        <div class="max-w-container-max mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+                <span class="text-xs font-black text-cendia-red uppercase tracking-widest bg-cendia-red-soft px-3 py-1 rounded-full border border-red-200 inline-block mb-3">Tus Objetivos</span>
+                <h2 class="font-display text-2xl sm:text-4xl font-black text-slate-900 uppercase tracking-tight">
+                    ¿QUÉ QUIERES LOGRAR?
+                </h2>
+                <p class="text-slate-600 text-xs sm:text-sm mt-2">Selecciona tu meta y te asesoramos con el mejor plan de estudio a tu medida.</p>
+            </div>
+
+            <!-- 6 Goal Cards Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3.5 sm:gap-4">
+                <!-- Card 1: Aprender inglés -->
+                <button type="button" onclick="selectGoal('Aprender inglés')" class="bg-surface-gray hover:bg-white p-5 rounded-2xl border border-slate-200 hover:border-cendia-red hover:shadow-lg transition-all flex flex-col items-center text-center group cursor-pointer h-full">
+                    <div class="w-12 h-12 rounded-xl bg-white border border-slate-200 text-cendia-red flex items-center justify-center mb-3.5 group-hover:bg-cendia-red group-hover:text-white transition-all shadow-sm">
+                        <span class="material-symbols-outlined text-2xl">school</span>
+                    </div>
+                    <h3 class="font-display font-extrabold text-xs sm:text-sm text-slate-900 group-hover:text-cendia-red transition-colors mb-1.5 leading-snug">Aprender inglés</h3>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Empieza desde cero y desarrolla las cuatro habilidades.</p>
+                </button>
+
+                <!-- Card 2: Certificar mi nivel -->
+                <button type="button" onclick="selectGoal('Certificar mi nivel')" class="bg-surface-gray hover:bg-white p-5 rounded-2xl border border-slate-200 hover:border-cendia-red hover:shadow-lg transition-all flex flex-col items-center text-center group cursor-pointer h-full">
+                    <div class="w-12 h-12 rounded-xl bg-white border border-slate-200 text-cendia-red flex items-center justify-center mb-3.5 group-hover:bg-cendia-red group-hover:text-white transition-all shadow-sm">
+                        <span class="material-symbols-outlined text-2xl">workspace_premium</span>
+                    </div>
+                    <h3 class="font-display font-extrabold text-xs sm:text-sm text-slate-900 group-hover:text-cendia-red transition-colors mb-1.5 leading-snug">Certificar mi nivel</h3>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Obtén una certificación nacional SETEC que respalde tus conocimientos.</p>
+                </button>
+
+                <!-- Card 3: Prepararme para examen -->
+                <button type="button" onclick="selectGoal('Examen')" class="bg-surface-gray hover:bg-white p-5 rounded-2xl border border-slate-200 hover:border-cendia-red hover:shadow-lg transition-all flex flex-col items-center text-center group cursor-pointer h-full">
+                    <div class="w-12 h-12 rounded-xl bg-white border border-slate-200 text-cendia-red flex items-center justify-center mb-3.5 group-hover:bg-cendia-red group-hover:text-white transition-all shadow-sm">
+                        <span class="material-symbols-outlined text-2xl">emoji_events</span>
+                    </div>
+                    <h3 class="font-display font-extrabold text-xs sm:text-sm text-slate-900 group-hover:text-cendia-red transition-colors mb-1.5 leading-snug">Prepararme para un examen</h3>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Cambridge (FCE), Oxford, TOEFL y más.</p>
+                </button>
+
+                <!-- Card 4: Inglés para empresas -->
+                <button type="button" onclick="selectGoal('Empresas')" class="bg-surface-gray hover:bg-white p-5 rounded-2xl border border-slate-200 hover:border-cendia-red hover:shadow-lg transition-all flex flex-col items-center text-center group cursor-pointer h-full">
+                    <div class="w-12 h-12 rounded-xl bg-white border border-slate-200 text-cendia-red flex items-center justify-center mb-3.5 group-hover:bg-cendia-red group-hover:text-white transition-all shadow-sm">
+                        <span class="material-symbols-outlined text-2xl">business_center</span>
+                    </div>
+                    <h3 class="font-display font-extrabold text-xs sm:text-sm text-slate-900 group-hover:text-cendia-red transition-colors mb-1.5 leading-snug">Inglés para empresas</h3>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Programas corporativos y ejecutivos personalizados.</p>
+                </button>
+
+                <!-- Card 5: Estudiar online -->
+                <button type="button" onclick="selectGoal('Online')" class="bg-surface-gray hover:bg-white p-5 rounded-2xl border border-slate-200 hover:border-cendia-red hover:shadow-lg transition-all flex flex-col items-center text-center group cursor-pointer h-full">
+                    <div class="w-12 h-12 rounded-xl bg-white border border-slate-200 text-cendia-red flex items-center justify-center mb-3.5 group-hover:bg-cendia-red group-hover:text-white transition-all shadow-sm">
+                        <span class="material-symbols-outlined text-2xl">laptop_mac</span>
+                    </div>
+                    <h3 class="font-display font-extrabold text-xs sm:text-sm text-slate-900 group-hover:text-cendia-red transition-colors mb-1.5 leading-snug">Estudiar online</h3>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Clases en vivo con profesores desde cualquier lugar.</p>
+                </button>
+
+                <!-- Card 6: Conocer mi nivel -->
+                <button type="button" onclick="selectGoal('Prueba de Ubicación')" class="bg-surface-gray hover:bg-white p-5 rounded-2xl border border-slate-200 hover:border-cendia-red hover:shadow-lg transition-all flex flex-col items-center text-center group cursor-pointer h-full">
+                    <div class="w-12 h-12 rounded-xl bg-white border border-slate-200 text-cendia-red flex items-center justify-center mb-3.5 group-hover:bg-cendia-red group-hover:text-white transition-all shadow-sm">
+                        <span class="material-symbols-outlined text-2xl">fact_check</span>
+                    </div>
+                    <h3 class="font-display font-extrabold text-xs sm:text-sm text-slate-900 group-hover:text-cendia-red transition-colors mb-1.5 leading-snug">Conocer mi nivel</h3>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">Realiza tu prueba de ubicación presencial.</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO PRINCIPAL EN EL INICIO (DARK NAVY THEME) -->
+    <section class="py-16 md:py-24 bg-gradient-to-b from-[#060D1E] via-[#08132B] to-[#0A1633] text-white relative overflow-hidden" id="contacto-directo">
+        <div class="max-w-container-max mx-auto px-4 sm:px-8 grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             
             <!-- Contact Left Info -->
             <div class="lg:col-span-5">
-                <span class="text-xs font-black text-cendia-red uppercase tracking-widest bg-cendia-red-soft px-3 py-1 rounded-full border border-red-200 inline-block mb-3">Atención Inmediata</span>
-                <h2 class="font-display text-3xl sm:text-4xl font-black text-slate-900 mb-4 leading-tight">
+                <span class="text-xs font-black text-white uppercase tracking-widest bg-cendia-red px-3.5 py-1 rounded-full inline-block mb-3 shadow-md">Atención Inmediata</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-black text-white mb-4 leading-tight">
                     ¿Listo para hablar inglés? ✨
                 </h2>
-                <p class="text-sm sm:text-base text-slate-600 mb-8 leading-relaxed">
+                <p class="text-sm sm:text-base text-slate-300 mb-8 leading-relaxed">
                     Déjanos tus datos y un asesor académico de CENDIA se pondrá en contacto contigo de inmediato para coordinar tu prueba de ubicación o resolver tus dudas.
                 </p>
 
-                <div class="bg-surface-gray p-6 sm:p-8 rounded-3xl border border-border-subtle space-y-6 shadow-sm">
+                <div class="bg-[#0C1938] p-6 sm:p-8 rounded-3xl border border-slate-700/70 space-y-6 shadow-xl">
                     <!-- Foto Fachada Sede -->
-                    <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+                    <div class="rounded-2xl overflow-hidden border border-slate-700 shadow-md">
                         <img src="cendia-building.png" alt="Fachada oficial CENDIA English Institute La Mariscal" class="w-full h-44 object-cover object-center">
                     </div>
 
                     <div class="flex items-start gap-4">
-                        <div class="w-11 h-11 rounded-2xl bg-cendia-red-soft border border-red-200 flex items-center justify-center text-cendia-red flex-shrink-0">
+                        <div class="w-11 h-11 rounded-2xl bg-cendia-red/20 border border-cendia-red/40 flex items-center justify-center text-cendia-red flex-shrink-0">
                             <span class="material-symbols-outlined text-xl">location_on</span>
                         </div>
                         <div>
-                            <h4 class="font-display font-bold text-sm text-slate-900">Sede La Mariscal – Quito</h4>
-                            <p class="text-xs sm:text-sm text-slate-600">Baquerizo Moreno E8-26 y Almagro</p>
+                            <h4 class="font-display font-bold text-sm text-white">Sede La Mariscal – Quito</h4>
+                            <p class="text-xs sm:text-sm text-slate-300">Baquerizo Moreno E8-26 y Almagro</p>
                         </div>
                     </div>
 
                     <!-- Horarios de Prueba de Ubicación -->
-                    <div class="border-t border-slate-200 pt-4">
-                        <div class="flex items-center gap-1.5 text-xs font-bold uppercase text-cendia-red mb-2">
+                    <div class="border-t border-slate-700/80 pt-4">
+                        <div class="flex items-center gap-1.5 text-xs font-bold uppercase text-red-300 mb-2">
                             <span class="material-symbols-outlined text-base">fact_check</span>
                             <span>Horarios Prueba de Ubicación (en oficinas):</span>
                         </div>
-                        <div class="space-y-1.5 text-xs text-slate-700 bg-white p-3.5 rounded-xl border border-slate-200">
+                        <div class="space-y-1.5 text-xs text-slate-200 bg-[#081024] p-3.5 rounded-xl border border-slate-700/80">
                             <div class="flex justify-between items-center">
-                                <span class="font-semibold">Lunes a Viernes:</span>
-                                <span class="font-bold text-slate-900 bg-slate-100 px-2 py-0.5 rounded">7:00 am a 3:00 pm</span>
+                                <span class="font-semibold text-slate-300">Lunes a Viernes:</span>
+                                <span class="font-bold text-white bg-slate-800 px-2 py-0.5 rounded border border-slate-700">7:00 am a 3:00 pm</span>
                             </div>
                             <div class="flex justify-between items-center">
-                                <span class="font-semibold">Sábados:</span>
-                                <span class="font-bold text-slate-900 bg-slate-100 px-2 py-0.5 rounded">9:00 am a 12:00 pm</span>
+                                <span class="font-semibold text-slate-300">Sábados:</span>
+                                <span class="font-bold text-white bg-slate-800 px-2 py-0.5 rounded border border-slate-700">9:00 am a 12:00 pm</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="border-t border-slate-200 pt-4 space-y-3">
+                    <div class="border-t border-slate-700/80 pt-4 space-y-3">
                         <div class="flex items-center gap-3">
-                            <span class="material-symbols-outlined text-slate-500 text-lg">call</span>
+                            <span class="material-symbols-outlined text-slate-400 text-lg">call</span>
                             <div>
-                                <p class="text-[11px] text-slate-500 font-semibold">Teléfono Fijo</p>
-                                <a href="tel:022528551" class="font-bold text-slate-900 hover:text-cendia-red transition-colors text-xs sm:text-sm">022-528-551</a>
+                                <p class="text-[11px] text-slate-400 font-semibold">Teléfono Fijo</p>
+                                <a href="tel:022528551" class="font-bold text-white hover:text-cendia-red transition-colors text-xs sm:text-sm">022-528-551</a>
                             </div>
                         </div>
                         <div class="flex items-center gap-3">
                             <span class="material-symbols-outlined text-whatsapp-green text-lg" style="font-variation-settings: 'FILL' 1;">chat</span>
                             <div>
-                                <p class="text-[11px] text-slate-500 font-semibold">WhatsApp Oficial</p>
+                                <p class="text-[11px] text-slate-400 font-semibold">WhatsApp Oficial</p>
                                 <a href="https://wa.me/593998720970" target="_blank" class="font-bold text-whatsapp-green hover:underline text-xs sm:text-sm">+593 99 872 0970</a>
                             </div>
                         </div>
@@ -333,16 +403,16 @@
                 </div>
             </div>
 
-            <!-- Contact Form Card -->
+            <!-- Contact Form Card in Dark Navy Theme -->
             <div class="lg:col-span-7">
-                <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-[0px_10px_40px_rgba(0,0,0,0.06)] border border-border-subtle">
+                <div class="bg-[#0C1938] p-6 sm:p-10 rounded-3xl shadow-2xl border border-slate-700/80">
                     <form id="level-test-form" class="space-y-4" onsubmit="handleFormSubmit(event)">
                         
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label class="block text-xs font-bold text-slate-800 mb-1.5" for="firstName">Nombre *</label>
+                                <label class="block text-xs font-bold text-slate-200 mb-1.5" for="firstName">Nombre *</label>
                                 <input 
-                                    class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm" 
+                                    class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-[#081024] focus:bg-[#0A1633] focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm text-white placeholder-slate-500" 
                                     id="firstName" 
                                     name="firstName" 
                                     required 
@@ -351,9 +421,9 @@
                                 >
                             </div>
                             <div>
-                                <label class="block text-xs font-bold text-slate-800 mb-1.5" for="lastName">Apellido *</label>
+                                <label class="block text-xs font-bold text-slate-200 mb-1.5" for="lastName">Apellido *</label>
                                 <input 
-                                    class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm" 
+                                    class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-[#081024] focus:bg-[#0A1633] focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm text-white placeholder-slate-500" 
                                     id="lastName" 
                                     name="lastName" 
                                     required 
@@ -364,9 +434,9 @@
                         </div>
 
                         <div>
-                            <label class="block text-xs font-bold text-slate-800 mb-1.5" for="phone">Celular (WhatsApp) *</label>
+                            <label class="block text-xs font-bold text-slate-200 mb-1.5" for="phone">Celular (WhatsApp) *</label>
                             <input 
-                                class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm" 
+                                class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-[#081024] focus:bg-[#0A1633] focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm text-white placeholder-slate-500" 
                                 id="phone" 
                                 name="phone" 
                                 required 
@@ -376,9 +446,9 @@
                         </div>
 
                         <div>
-                            <label class="block text-xs font-bold text-slate-800 mb-1.5" for="email">Dirección de correo electrónico *</label>
+                            <label class="block text-xs font-bold text-slate-200 mb-1.5" for="email">Dirección de correo electrónico *</label>
                             <input 
-                                class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm" 
+                                class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-[#081024] focus:bg-[#0A1633] focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm text-white placeholder-slate-500" 
                                 id="email" 
                                 name="email" 
                                 required 
@@ -389,43 +459,51 @@
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label class="block text-xs font-bold text-slate-800 mb-1.5" for="schedule">Horario de Preferencia</label>
+                                <label class="block text-xs font-bold text-slate-200 mb-1.5" for="schedule">Horario de Preferencia</label>
                                 <select 
-                                    class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm text-slate-900" 
+                                    class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-[#081024] focus:bg-[#0A1633] focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm text-white" 
                                     id="schedule" 
                                     name="schedule"
                                 >
-                                    <option value="Presencial: 7:00 am - 8:40 am">Presencial: 7:00 am - 8:40 am</option>
-                                    <option value="Presencial: 9:00 am - 10:50 am">Presencial: 9:00 am - 10:50 am</option>
-                                    <option value="Presencial: 3:00 pm - 4:50 pm">Presencial: 3:00 pm - 4:50 pm</option>
-                                    <option value="Sábados: 8:00 am - 1:00 pm">Sábados: 8:00 am - 1:00 pm</option>
-                                    <option value="Online: 5:00 pm - 6:50 pm">Online: 5:00 pm - 6:50 pm</option>
-                                    <option value="Online: 7:00 pm - 8:40 pm">Online: 7:00 pm - 8:40 pm</option>
+                                    <optgroup label="Presencial (Lunes a Viernes)" class="bg-[#081024] text-white">
+                                        <option value="Presencial: 7:00 am - 8:40 am">Presencial: 7:00 am - 8:40 am</option>
+                                        <option value="Presencial: 9:00 am - 10:50 am">Presencial: 9:00 am - 10:50 am</option>
+                                        <option value="Presencial: 3:00 pm - 4:50 pm">Presencial: 3:00 pm - 4:50 pm</option>
+                                    </optgroup>
+                                    <optgroup label="Presencial (Sábados)" class="bg-[#081024] text-white">
+                                        <option value="Presencial Sábados: 8:00 am - 1:00 pm (15 meses)">Presencial Sábados: 8:00 am - 1:00 pm (15 meses)</option>
+                                    </optgroup>
+                                    <optgroup label="Online en Vivo (Lunes a Viernes)" class="bg-[#081024] text-white">
+                                        <option value="Online: 5:00 pm - 6:50 pm">Online: 5:00 pm - 6:50 pm</option>
+                                        <option value="Online: 7:00 pm - 8:40 pm">Online: 7:00 pm - 8:40 pm</option>
+                                    </optgroup>
                                 </select>
                             </div>
 
                             <div>
-                                <label class="block text-xs font-bold text-slate-800 mb-1.5" for="service">¿Qué deseas solicitar?</label>
+                                <label class="block text-xs font-bold text-slate-200 mb-1.5" for="service">¿Qué deseas solicitar?</label>
                                 <select 
-                                    class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-gray focus:bg-white focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm text-slate-900" 
+                                    class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-[#081024] focus:bg-[#0A1633] focus:outline-none focus:ring-2 focus:ring-cendia-red focus:border-cendia-red transition-all text-sm text-white" 
                                     id="service" 
                                     name="service"
                                 >
                                     <option value="Prueba de Ubicación (en oficinas)">Prueba de Ubicación (en oficinas)</option>
-                                    <option value="Inscripción Programa 12 Meses (Lunes a Viernes)">Inscripción Programa 12 Meses (L-V)</option>
-                                    <option value="Inscripción Programa Sábados (15 Meses)">Inscripción Programa Sábados (15 Meses)</option>
-                                    <option value="Certificación Cambridge / SETEC / Oxford">Certificación Cambridge / SETEC / Oxford</option>
+                                    <option value="Aprender inglés desde cero (12 Niveles)">Aprender inglés desde cero (12 Niveles)</option>
+                                    <option value="Certificar mi nivel (Aval SETEC / Cambridge)">Certificar mi nivel (Aval SETEC / Cambridge)</option>
+                                    <option value="Preparación Examen Cambridge FCE / Oxford">Preparación Examen Cambridge FCE / Oxford</option>
+                                    <option value="Inglés para Empresas y Ejecutivos">Inglés para Empresas y Ejecutivos</option>
+                                    <option value="Clases de Inglés Online en Vivo">Clases de Inglés Online en Vivo</option>
                                 </select>
                             </div>
                         </div>
 
                         <button 
                             id="submit-btn"
-                            class="w-full mt-6 bg-cendia-red text-white font-bold text-sm py-4 rounded-xl hover:bg-cendia-red-dark transition-all shadow-lg shadow-red-900/25 active:scale-95 flex justify-center items-center gap-2" 
+                            class="w-full mt-6 bg-cendia-red text-white font-bold text-sm py-4 rounded-xl hover:bg-cendia-red-dark transition-all shadow-lg shadow-red-900/40 active:scale-95 flex justify-center items-center gap-2" 
                             type="submit"
                         >
-                            <span class="material-symbols-outlined text-xl">fact_check</span>
-                            <span>Quiero mi prueba de ubicación · Enviar Solicitud</span>
+                            <span class="material-symbols-outlined text-xl">send</span>
+                            <span>Enviar y Confirmar Cita por WhatsApp</span>
                         </button>
                     </form>
                 </div>

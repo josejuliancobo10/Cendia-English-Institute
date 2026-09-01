@@ -21,7 +21,24 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-});
+// Goal Selection Handler
+function selectGoal(goalService) {
+    const serviceSelect = document.getElementById('service');
+    if (serviceSelect) {
+        for (let i = 0; i < serviceSelect.options.length; i++) {
+            const optVal = serviceSelect.options[i].value.toLowerCase();
+            const searchVal = goalService.toLowerCase();
+            if (optVal.includes(searchVal) || searchVal.includes(optVal)) {
+                serviceSelect.selectedIndex = i;
+                break;
+            }
+        }
+    }
+    const formSection = document.getElementById('contacto-directo');
+    if (formSection) {
+        formSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}
 
 // Form Submission Handler
 function handleFormSubmit(event) {

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
     <meta charset="utf-8">
@@ -410,6 +410,76 @@
             <span class="text-[10px] font-bold mt-0.5">Contacto</span>
         </a>
     </nav>
+
+    <!-- Chatbot Container -->
+    <div id="chatbot-container" class="fixed bottom-24 right-4 sm:right-8 z-50 hidden transition-all duration-300 transform scale-95 opacity-0">
+        <div class="bg-white w-[340px] sm:w-[370px] h-[520px] rounded-3xl shadow-2xl border border-border-subtle flex flex-col overflow-hidden">
+            <!-- Header -->
+            <div class="bg-[#131742] p-4 flex justify-between items-center text-white">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-xl">smart_toy</span>
+                    </div>
+                    <div>
+                        <span class="font-display font-bold text-sm block">Asistente Cendia</span>
+                        <span class="text-[11px] text-indigo-200 flex items-center gap-1 font-medium">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping inline-block"></span> En línea
+                        </span>
+                    </div>
+                </div>
+                <button onclick="toggleChatbot()" class="hover:bg-white/10 rounded-full p-1.5 transition-colors" aria-label="Cerrar chat">
+                    <span class="material-symbols-outlined text-lg">close</span>
+                </button>
+            </div>
+
+            <!-- Message Area -->
+            <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-3.5 bg-surface-gray text-sm">
+                <div class="flex items-start gap-2.5">
+                    <div class="w-7 h-7 rounded-full bg-[#131742] text-white flex items-center justify-center flex-shrink-0 text-xs mt-1">
+                        <span class="material-symbols-outlined text-sm">smart_toy</span>
+                    </div>
+                    <div class="bg-white text-slate-800 p-3.5 rounded-2xl rounded-tl-none shadow-sm border border-border-subtle leading-relaxed text-xs sm:text-sm">
+                        ¡Hola! 👋 Soy el asistente virtual de <strong>CENDIA</strong>. ¿En qué te puedo ayudar hoy?
+                    </div>
+                </div>
+
+                <!-- Quick Action Chips -->
+                <div class="flex flex-wrap gap-2 pt-2" id="quick-chips">
+                    <button onclick="sendQuickReply('Horarios y Niveles')" class="px-3 py-1.5 bg-white border border-cendia-red/30 text-cendia-red font-semibold rounded-full text-xs hover:bg-cendia-red hover:text-white transition-all shadow-sm">12 Niveles & Horarios</button>
+                    <button onclick="sendQuickReply('Precios y Costos')" class="px-3 py-1.5 bg-white border border-cendia-red/30 text-cendia-red font-semibold rounded-full text-xs hover:bg-cendia-red hover:text-white transition-all shadow-sm">Precios ($90/$100)</button>
+                    <button onclick="sendQuickReply('Prueba de Ubicación')" class="px-3 py-1.5 bg-white border border-cendia-red/30 text-cendia-red font-semibold rounded-full text-xs hover:bg-cendia-red hover:text-white transition-all shadow-sm">Prueba de Ubicación</button>
+                    <button onclick="sendQuickReply('Aval SETEC y Cambridge')" class="px-3 py-1.5 bg-white border border-cendia-red/30 text-cendia-red font-semibold rounded-full text-xs hover:bg-cendia-red hover:text-white transition-all shadow-sm">SETEC & Cambridge</button>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="p-3.5 border-t border-border-subtle bg-white">
+                <form id="chat-form" onsubmit="handleChatSubmit(event)" class="relative flex items-center">
+                    <input 
+                        type="text" 
+                        id="chat-input"
+                        placeholder="Escribe tu consulta..." 
+                        class="w-full pl-4 pr-12 py-3 rounded-full border border-outline-variant bg-surface-gray focus:bg-white focus:ring-2 focus:ring-cendia-red focus:border-cendia-red outline-none text-xs sm:text-sm"
+                        autocomplete="off"
+                    >
+                    <button type="submit" class="absolute right-2.5 w-8 h-8 rounded-full bg-cendia-red text-white flex items-center justify-center hover:bg-cendia-red-dark transition-transform hover:scale-105" aria-label="Enviar mensaje">
+                        <span class="material-symbols-outlined text-sm">send</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot Trigger Button -->
+    <button 
+        id="chatbot-trigger-btn"
+        onclick="toggleChatbot()" 
+        class="fixed flex bottom-6 right-20 sm:bottom-8 sm:right-24 bg-cendia-red text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-transform z-40"
+        title="Abrir chat de ayuda"
+        aria-label="Abrir chat de ayuda"
+    >
+        <span class="material-symbols-outlined text-2xl">chat</span>
+    </button>
 
     <!-- Floating WhatsApp -->
     <a class="hidden md:flex fixed bottom-8 right-8 bg-whatsapp-green text-white w-14 h-14 rounded-full items-center justify-center shadow-2xl hover:scale-110 transition-transform z-40 pulse-whatsapp" href="https://wa.me/593998720970" target="_blank">

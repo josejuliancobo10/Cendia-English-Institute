@@ -504,14 +504,14 @@
     <div id="chatbot-container" class="fixed bottom-24 right-4 sm:right-8 z-50 hidden transition-all duration-300 transform scale-95 opacity-0">
         <div class="bg-white w-[340px] sm:w-[370px] h-[520px] rounded-3xl shadow-2xl border border-border-subtle flex flex-col overflow-hidden">
             <!-- Header -->
-            <div class="bg-cendia-red p-4 flex justify-between items-center text-white">
+            <div class="bg-[#131742] p-4 flex justify-between items-center text-white">
                 <div class="flex items-center gap-3">
                     <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center">
                         <span class="material-symbols-outlined text-xl">smart_toy</span>
                     </div>
                     <div>
                         <span class="font-display font-bold text-sm block">Asistente Cendia</span>
-                        <span class="text-[11px] text-red-200 flex items-center gap-1 font-medium">
+                        <span class="text-[11px] text-indigo-200 flex items-center gap-1 font-medium">
                             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping inline-block"></span> En línea
                         </span>
                     </div>
@@ -524,19 +524,20 @@
             <!-- Message Area -->
             <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-3.5 bg-surface-gray text-sm">
                 <div class="flex items-start gap-2.5">
-                    <div class="w-7 h-7 rounded-full bg-cendia-red text-white flex items-center justify-center flex-shrink-0 text-xs mt-1">
+                    <div class="w-7 h-7 rounded-full bg-[#131742] text-white flex items-center justify-center flex-shrink-0 text-xs mt-1">
                         <span class="material-symbols-outlined text-sm">smart_toy</span>
                     </div>
-                    <div class="bg-white text-slate-800 p-3.5 rounded-2xl rounded-tl-none shadow-sm border border-border-subtle leading-relaxed">
-                        ¡Hola! 👋 ¿Tienes preguntas sobre nuestras <strong>modalidades presencial u online</strong>? ¡Estoy para ayudarte!
+                    <div class="bg-white text-slate-800 p-3.5 rounded-2xl rounded-tl-none shadow-sm border border-border-subtle leading-relaxed text-xs sm:text-sm">
+                        ¡Hola! 👋 ¿Tienes dudas sobre las <strong>modalidades presencial u online</strong>? ¡Estoy para ayudarte!
                     </div>
                 </div>
 
                 <!-- Quick Action Chips -->
                 <div class="flex flex-wrap gap-2 pt-2" id="quick-chips">
-                    <button onclick="sendQuickReply('Horarios y Niveles')" class="px-3 py-1.5 bg-white border border-cendia-red/30 text-cendia-red font-semibold rounded-full text-xs hover:bg-cendia-red hover:text-white transition-all shadow-sm">Presencial vs Online</button>
-                    <button onclick="sendQuickReply('Precios y Costos')" class="px-3 py-1.5 bg-white border border-cendia-red/30 text-cendia-red font-semibold rounded-full text-xs hover:bg-cendia-red hover:text-white transition-all shadow-sm">Costos ($90/$100)</button>
+                    <button onclick="sendQuickReply('Horarios y Niveles')" class="px-3 py-1.5 bg-white border border-cendia-red/30 text-cendia-red font-semibold rounded-full text-xs hover:bg-cendia-red hover:text-white transition-all shadow-sm">12 Niveles & Horarios</button>
+                    <button onclick="sendQuickReply('Precios y Costos')" class="px-3 py-1.5 bg-white border border-cendia-red/30 text-cendia-red font-semibold rounded-full text-xs hover:bg-cendia-red hover:text-white transition-all shadow-sm">Precios ($90/$100)</button>
                     <button onclick="sendQuickReply('Prueba de Ubicación')" class="px-3 py-1.5 bg-white border border-cendia-red/30 text-cendia-red font-semibold rounded-full text-xs hover:bg-cendia-red hover:text-white transition-all shadow-sm">Prueba de Ubicación</button>
+                    <button onclick="sendQuickReply('Aval SETEC y Cambridge')" class="px-3 py-1.5 bg-white border border-cendia-red/30 text-cendia-red font-semibold rounded-full text-xs hover:bg-cendia-red hover:text-white transition-all shadow-sm">SETEC & Cambridge</button>
                 </div>
             </div>
 
@@ -562,8 +563,9 @@
     <button 
         id="chatbot-trigger-btn"
         onclick="toggleChatbot()" 
-        class="hidden md:flex fixed bottom-8 right-24 bg-cendia-red text-white w-14 h-14 rounded-full items-center justify-center shadow-2xl hover:scale-110 transition-transform z-40"
+        class="fixed flex bottom-6 right-20 sm:bottom-8 sm:right-24 bg-cendia-red text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-transform z-40"
         title="Abrir chat de ayuda"
+        aria-label="Abrir chat de ayuda"
     >
         <span class="material-symbols-outlined text-2xl">chat</span>
     </button>

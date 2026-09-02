@@ -254,7 +254,7 @@ function respondToQuery(query) {
         Enseñando inglés con excelencia desde 1978 (48+ años de trayectoria). Metodología de inmersión total con docentes altamente especializados.<br><br>
         <a href="nosotros.html" class="text-cendia-red font-bold hover:underline">Conoce nuestra historia →</a>`;
     } else {
-        reply = `¡Con gusto te asesoramos! Puedes preguntarme sobre los 12 niveles, horarios presenciales u online, costos o agendar tu prueba de ubicación.<br><br>
+        reply = `¡Con gusto te asesoramos! Puedes preguntarme sobre los 12 niveles, horarios presenciales y online, costos o agendar tu prueba de ubicación.<br><br>
         <a href="https://wa.me/593998720970?text=Hola,%20deseo%20atención%20personalizada%20para%20estudiar%20en%20CENDIA" target="_blank" class="inline-flex items-center gap-1.5 text-whatsapp-green font-bold hover:underline">
             <span>💬 Hablar directamente con un asesor por WhatsApp</span>
         </a>`;
